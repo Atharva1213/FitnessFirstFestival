@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
+import Announcement from './components/Announcement';
+import Banner from './components/Banner';
+import Gallery from './components/Gallery';
+// import EventCorousel from './components/EventCorousel';
+import Numbers from './components/Numbers';
+import EventPlanned from './components/EventPlanned';
+import TaskForce from './components/Taskforce';
+import Timeline from './components/Timeline';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='relative'>
+      <Banner />
+      <About />
+      <Numbers />
+      <TaskForce />
+      <Timeline />
+      <EventPlanned />
+      <Gallery />
+      {/* <EventCorousel/> */}
+      <Announcement />
+
     </div>
+
   );
 }
 

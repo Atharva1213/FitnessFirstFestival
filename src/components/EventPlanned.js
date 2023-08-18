@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../vid.mp4';
+import video from '../Videos/vid.mp4';
 import bg1 from '../Images/sp1.jpg';
 import bg2 from '../Images/sp2.jpg';
 

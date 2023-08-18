@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import bg from '../bg-img.jpg';
+import bg from '../Images/bg-img.jpg';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
 
 function Announcement() {

@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import bg from '../numBg.jpg'
+import { AiFillCalendar } from 'react-icons/ai';
+import { FaRunning } from 'react-icons/fa'
+import { FaPeopleGroup } from 'react-icons/fa6';
+import { IoCheckmarkDoneCircle } from 'react-icons/io5';
+
+
 
 function Numbers() {
   const [count1, setCount1] = useState(0);
@@ -71,32 +76,31 @@ function Numbers() {
 
 
   return (
-    <div id="numbers" className="bg-cover bg-center p-10 flex flex-col lg:flex-row md:flex-row justify-center md:gap-[0.5rem] gap-[2.5rem] lg:p-6 md:p-5 lg:gap-[6rem] items-center font-bannerfont bg-gradient-to-b from-pink-700 via-purple-900 to-black">
-      <div className="flex lg:flex-row items-center justify-between md:gap-[1.5rem]  lg:gap-[4rem] ">
-        <div className="text-white flex flex-col items-center justify-center">
-          <h1 className="ml-4 tracking-widest text-center text-[3.5rem] lg:text-4xl font-semibold">{count1}</h1>
-          <h1 className="mt-6 text-center font-nav text-[2rem] lg:text-4xl font-semibold">Festival<br />Year</h1>
-        </div>
-        <div className="vertical-line hidden md:block lg:block mt-5"></div>
-        <div className="text-white">
-          <h1 className="ml-4 tracking-widest text-center font-semibold text-[3.5rem] lg:text-4xl">{count2}+</h1>
-          <h1 className="mt-6 text-center font-nav text-[2rem] lg:text-4xl font-semibold">Events <br />Planned</h1>
-        </div>
+    <div id="numbers" className="lg:p-10 h-[100vh] lg:h-auto flex flex-col lg:flex-row justify-center lg:gap-48 gap-16">
+
+      <div className='flex flex-col items-center gap-1'>
+        <AiFillCalendar className='text-6xl text-pink-700' />
+        <h1 className='text-3xl font-bold'>{count1}</h1>
+        <div className='h-[3px] bg-black w-16'></div>
+        <h1 className='text-xl'>Festival Year</h1>
       </div>
-
-      <div className="vertical-line block md:hidden lg:hidden"></div>
-
-      <div className="flex lg:flex-row lg:gap-[4rem]">
-        <div className="vertical-line hidden md:block lg:block mt-5"></div>
-        <div className="text-white flex flex-col items-center justify-center">
-          <h1 className="ml-4 tracking-widest text-center font-semibold text-[3.5rem] lg:text-4xl">{count3}+</h1>
-          <h1 className="mt-6 text-center font-nav text-[2rem] lg:text-4xl font-semibold">Expected <br />Participants</h1>
-        </div>
-        <div className="vertical-line hidden md:block lg:block mt-5"></div>
-        <div className="text-white flex flex-col items-center justify-center">
-          <h1 className="ml-4 tracking-widest text-center font-semibold text-[3.5rem] lg:text-4xl">{count4}+</h1>
-          <h1 className="mt-6 text-center font-nav text-[2rem] lg:text-4xl font-semibold">No. Of <br />Participants</h1>
-        </div>
+      <div className='flex flex-col items-center gap-1'>
+        <FaRunning className='text-6xl text-pink-700'/>
+        <h1 className='text-3xl font-bold'>{count2}+</h1>
+        <div className='h-[3px] bg-black w-16'></div>
+        <h1 className='text-xl'>Events Planned</h1>
+      </div>
+      <div className='flex flex-col items-center gap-1'>
+        <FaPeopleGroup className='text-6xl text-pink-700'/>
+        <h1 className='text-3xl font-bold'>{count3}+</h1>
+        <div className='h-[3px] bg-black w-16'></div>
+        <h1 className='text-xl'>Expected Participants</h1>
+      </div>
+      <div className='flex flex-col items-center gap-1'>
+        <IoCheckmarkDoneCircle className='text-6xl text-pink-700'/>
+        <h1 className='text-3xl font-bold'>{count4}+</h1>
+        <div className='h-[3px] bg-black w-16'></div>
+        <h1 className='text-xl'>Already Participated</h1>
       </div>
 
     </div>

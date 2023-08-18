@@ -1,6 +1,6 @@
 import React from 'react'
-import bg from '../bg-img.jpg'
-import logo from '../logo.png'
+import bg from '../Images/bg-img.jpg'
+import logo from '../Images/logo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

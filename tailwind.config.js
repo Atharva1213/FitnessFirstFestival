@@ -7,7 +7,15 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        roman: 'upper-roman',
+      }
+    },
     fontFamily : {
       quoteText : ['Courgette', 'cursive'],
       headingText : ['Carter One', 'cursive'],

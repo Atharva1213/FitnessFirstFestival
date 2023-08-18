@@ -1,10 +1,11 @@
 import React from 'react';
-import bg from '../timBg.jpg';
+import bg from '../Images/timBg.jpg';
 import food from '../Images/food.jpg'
 import trekking from '../Images/trekking.jpg'
-import marathon from '../marathon.jpg'
+import marathon from '../Images/marathon.jpg'
 import Card from '../components/Card'
 import Navbar from './Navbar';
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 export default function Banner() {
 

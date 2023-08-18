@@ -21,7 +21,7 @@ const events = [
         title: 'Session on Healthy Life Living',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore iste adipisci autem magnam quidem fuga dolorum provident commodi voluptate quas?',
         isLive: false,
-        isLive : true
+        isLive: true
     },
     {
         date: '26th August 2023',
@@ -63,11 +63,11 @@ const events = [
 ];
 
 const sortedEvents = events.slice().sort((a, b) => {
-    if (a.isLive && !b.isLive) return -1; 
-    if (!a.isLive && b.isLive) return 1;  
-    if (!a.isDone && b.isDone) return -1; 
-    if (a.isDone && !b.isDone) return 1; 
-    return 0;    
+    if (a.isLive && !b.isLive) return -1;
+    if (!a.isLive && b.isLive) return 1;
+    if (!a.isDone && b.isDone) return -1;
+    if (a.isDone && !b.isDone) return 1;
+    return 0;
 });
 
 
@@ -75,7 +75,12 @@ function Timeline() {
     return (
         <div className='h-full w-full flex flex-col  lg:flex-row font-bannerfont bg-gradient-to-bl from-pink-700 via-black to-black'>
             <div className='p-4 flex flex-col gap-8 lg:w-[55%]'>
-                <h1 className='text-white text-5xl font-bannerfont font-bold underline underline-offset-8 '>Event Timeline</h1>
+                <div className='flex flex-col gap-4 pt-8 pl-8 justify-center'>
+                    <h1 className='text-3xl lg:text-5xl font-semibold text-white'>
+                        Timeline
+                    </h1>
+                    <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[10%]"></div>
+                </div>
                 <div className="overflow-auto left w-full h-[80vh] lg:w-full p-4 lg:pl-16 lg:pt-8 flex flex-col gap-[3.5rem] ">
                     <ol className="relative border-l-2 border-pink-600">
                         {sortedEvents.map((event, index) => (

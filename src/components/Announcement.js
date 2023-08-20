@@ -59,7 +59,7 @@ function Announcement() {
             </button>
 
             <div
-                className="w-full invisible fixed bottom-0 right-0 top-0 z-[2045] flex lg:w-96 max-w-full translate-x-full flex-col border-none bg-gray-900 bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
+                className=" w-full invisible fixed bottom-0 right-0 top-0 z-[2045] flex lg:w-96 max-w-full translate-x-full flex-col border-none bg-gray-900 bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
                 tabIndex="-1"
                 id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel"

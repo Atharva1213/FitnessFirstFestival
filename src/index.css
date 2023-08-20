@@ -24,22 +24,7 @@ code {
     monospace;
 }
 
-.hover-4 {
-  padding: 4px;
-  border: 5px solid;
-  border-image: repeating-linear-gradient(135deg, #E97F02 0 20px, #82eb18 0 30px) 8;
-  -webkit-mask:
-    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
-    conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
-    linear-gradient(#000 0 0) padding-box no-repeat;
-  transition: .3s, -webkit-mask-position .3s .3s;
-}
 
-.hover-4:hover {
-  --_i: 100%;
-  color: #f17b53;
-  transition: .3s, -webkit-mask-size .3s .3s;
-}
 
 /* Change the style of the scrollbar track */
 ::-webkit-scrollbar {
@@ -62,6 +47,11 @@ code {
   /* Set the color of the track on hover */
 }
 
+
+.rounded-none {
+  border-radius: 0;
+  /* or any other styling for removing rounded corners */
+}
 
 
 @keyframes glow {
@@ -107,18 +97,10 @@ code {
 
 
 @media (max-width: 575.98px) {
-
-  .card-view {
-    flex-direction: column;
-    margin-top: 180px;
-    align-items: center;
-    padding: 0;
-    justify-content: center;
-
-  }
-
-  .card {
-    width: 80%;
+  .banner {
+    background-position: 65% 95%;
+    height: 100vh;
+    width: 100%;
   }
 
   .nav-items {
@@ -129,14 +111,14 @@ code {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 12px;
+    padding: 24px 12px;
 
   }
 
   .tagline {
     border: 1px solid white;
-    padding: 12px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 1rem;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -144,6 +126,27 @@ code {
     background-color: rgba(15, 23, 42, 0.751);
 
   }
+
+  .title-content {
+    gap: 1.5rem;
+  }
+
+  .title-pccoe {
+    font-size: 1.5rem;
+  }
+
+  .title-prog {
+    font-size: 3rem;
+  }
+
+  .title-year {
+    font-size: 3rem;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+  }
+
 
   .tag {
     padding: 0;
@@ -154,4 +157,107 @@ code {
     display: block;
   }
 
+}
+
+@media (min-width: 768px) and (max-width : 1024px) {
+
+  /* Your styles for portrait and smaller tablet screens here */
+  .banner {
+    background-position: 65% 95%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .navbar {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 24px 12px;
+
+  }
+
+  .tagline {
+    border: 1px solid white;
+    padding: 16px;
+    font-size: 1.5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 23, 42, 0.751);
+
+  }
+
+  .title-content {
+    gap: 1.5rem;
+  }
+
+  .title-pccoe {
+    font-size: 1.5rem;
+  }
+
+  .title-prog {
+    font-size: 5rem;
+  }
+
+  .title-year {
+    font-size: 3rem;
+  }
+
+  .quote {
+    max-width: 35rem;
+    font-size: 1.5rem;
+  }
+
+
+
+  .tag {
+    padding: 0;
+    color: #e96202
+  }
+
+  .icon {
+    display: block;
+  }
+
+}
+
+
+@media (min-width: 1440px) {
+
+  .hover-4 {
+    padding: 4px;
+    border: 5px solid;
+    border-image: repeating-linear-gradient(135deg, #E97F02 0 20px, #82eb18 0 30px) 8;
+    -webkit-mask:
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+  }
+
+  .hover-4:hover {
+    --_i: 100%;
+    color: #f17b53;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1160px) {
+  #numbers {
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  #numbers {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
 }

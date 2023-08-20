@@ -12,7 +12,7 @@ export default function Card(props) {
                         <p> - {props.date}</p>
                     </div>
                     <h1 className='text-2xl text-pink-600 font-bannerfont font-bold h-16'>{props.competition}</h1>
-                    <button className='border border-1 border-purple-700 py-1 px-2 mt-2 hover:bg-pink-600 hover:text-white hover:border-pink-600 bg-purple-700 transition duration-300'>Register</button>
+                    <button className='border border-1 border-purple-700 py-1 px-2 mt-2 hover:bg-pink-600 text-white hover:border-pink-600 bg-purple-700 transition duration-300'>Register</button>
                 </div>
             </div>
         </div>

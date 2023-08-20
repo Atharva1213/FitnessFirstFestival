@@ -1,7 +1,14 @@
 import React from 'react'
-
+import { GiHamburgerMenu } from 'react-icons/gi'
 export default function Navbar() {
     const [showAboutUsDropdown, setShowAboutUsDropdown] = React.useState(false);
+
+    const [showMobileMenu, setShowMobileMenu] = React.useState(false);
+
+    const toggleMobileMenu = () => {
+        setShowMobileMenu(!showMobileMenu);
+    };
+
 
     const handleAboutUsHover = () => {
         setShowAboutUsDropdown(true);
@@ -15,7 +22,7 @@ export default function Navbar() {
             <ul className="tagline bg-[#ff0054] ">
                 <h2 className='tag py-5 px-5 text-white'><span className='text-2xl'>--</span> Commit To Be Fit.</h2>
                 <ul className='icon hidden'>
-                    Icon
+                    <GiHamburgerMenu onClick={toggleMobileMenu}/>
                 </ul>
             </ul>
             <ul className='nav-items flex w-[36rem] bg-slate-900/60 text-white rounded-sm border border-1 border-[#F94C10]' >
@@ -38,7 +45,16 @@ export default function Navbar() {
                 <li className='py-5 px-8 w-[9rem] text-center hover:bg-[#ff0054] hover:cursor-pointer transition duration-400'>Calendar</li>
                 <li className='py-5 px-8 w-[9rem] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>Contact Us</li>
             </ul>
-
+            {showMobileMenu && (
+                <ul className='mobile-nav-menu bg-black w-full text-white text-center p-4 absolute top-[64px] left-0'>
+                    <li className='py-2 hover:bg-gray-800 hover:text-white cursor-pointer transition duration-400'>Home</li>
+                    <li className='py-2 relative group hover:bg-gray-800 hover:text-white cursor-pointer transition duration-400'>
+                        About Us
+                        {/* ... (mobile submenu links) */}
+                    </li>
+                    {/* ... (other mobile navigation items) */}
+                </ul>
+            )}
         </div>
     )
 }

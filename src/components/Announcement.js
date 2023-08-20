@@ -101,7 +101,7 @@ function Announcement() {
                     {announcements.map((announcement, index) => (
                         <div
                             key={index}
-                            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mb-8"
+                            className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mb-8"
                         >
                             <a href={announcement.link}>
                                 <img

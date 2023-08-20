@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 575px) {
     .main123 {
-        height: 180vh;
+        height: 190vh;
         flex-direction: column;
         width: 100%;
         gap: 80px;

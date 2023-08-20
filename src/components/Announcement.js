@@ -41,7 +41,7 @@ function Announcement() {
     }, [announcements.length]);
 
     return (
-        <div className="bottom-3 right-4 lg:bottom-6 lg:right-14 fixed z-40">
+        <div className="bottom-3 right-4 lg:bottom-6 lg:right-14 fixed z-50">
             <button
                 className="mr-1.5 inline-block rounded bg-primary p-2 lg:px-6 lg:pb-2 lg:pt-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] py-4 bg-[#ff0054]"
                 type="button"
@@ -51,7 +51,7 @@ function Announcement() {
                 data-te-ripple-init
                 data-te-ripple-color="light"
             >
-                <div className='flex z-20 items-center justify-center'>
+                <div className='flex z-50 items-center justify-center'>
                     <h1 className="text-xs lg:text-lg">📢</h1>
                     <h1>Announcement</h1>
                 </div>

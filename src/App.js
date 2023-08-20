@@ -9,6 +9,7 @@ import EventPlanned from './components/EventPlanned';
 import TaskForce from './components/Taskforce';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
+import DevelopedBy from './components/DevelopedBy/DevelopedBy';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Timeline />
       <EventPlanned />
       <Gallery />
+      <DevelopedBy/>
       <Footer/>
       {/* <EventCorousel/> */}
       <Announcement />

@@ -1,0 +1,159 @@
+.main123 {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.social-links123{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
+}
+
+.profile-card123 {
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 220px;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+}
+
+.profile-card123:hover {
+    border-radius: 10px;
+    height: 260px;
+}
+
+.profile-card123 .img123 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+
+.profile-card123:hover .img123 {
+    transform: translateY(-60px);
+}
+
+.img123 .img1234 {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile-card123:hover .img1234 {
+    border-radius: 10px;
+}
+
+.caption123 {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card123:hover .caption123 {
+    opacity: 1;
+}
+
+.caption123 .h3123 {
+    font-size: 21px;
+    font-family: sans-serif;
+}
+
+.caption123 .p123 {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+}
+
+.caption123 .social-links123 .a123 {
+    font-size: 21px;
+    transition: .6s;
+}
+
+@media screen and (max-width: 640px) {
+    .main123 {
+        height: 160vh;
+        flex-direction: column;
+        width: 100%;
+        gap: 80px;
+    }
+    .main456{
+        gap:90px;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-card123 .img123 {
+        transform: translateY(-60px);
+    }
+
+    .profile-card123 {
+        border-radius: 10px;
+        height: 260px;
+    }
+
+    .profile-card123 .caption123 {
+        opacity: 1;
+    }
+
+    .profile-card123 .img1234 {
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main123 {
+        height: 80vh;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-card123 .img123 {
+        transform: translateY(-60px);
+    }
+
+    .profile-card123 {
+        border-radius: 10px;
+        height: 260px;
+    }
+
+    .profile-card123 .caption123 {
+        opacity: 1;
+    }
+
+    .profile-card123 .img1234 {
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .main123 {
+        height: 60vh;
+        gap: 100px;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+
+}
+
+@media screen and (min-width: 1280px) {
+    .main123 {
+        height: 45vh;
+        gap: 100px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+}

@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 640px) {
     .main123 {
-        height: 160vh;
+        height: 200vh;
         flex-direction: column;
         width: 100%;
         gap: 80px;

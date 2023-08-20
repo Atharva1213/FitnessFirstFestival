@@ -111,6 +111,37 @@
 
 }
 
+@media screen and (max-width: 575px) {
+    .main123 {
+        height: 180vh;
+        flex-direction: column;
+        width: 100%;
+        gap: 80px;
+    }
+    .main456{
+        gap:90px;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-card123 .img123 {
+        transform: translateY(-60px);
+    }
+
+    .profile-card123 {
+        border-radius: 10px;
+        height: 260px;
+    }
+
+    .profile-card123 .caption123 {
+        opacity: 1;
+    }
+
+    .profile-card123 .img1234 {
+        border-radius: 10px;
+    }
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .main123 {
         height: 80vh;

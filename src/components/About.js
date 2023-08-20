@@ -8,7 +8,7 @@ AOS.init();
 
 function About() {
     return (
-        <div id='about' className='relative h-[145vh] md:h-[100vh] lg:h-[120vh] 2xl:h-[100vh] sm:h-[100vh] w-full overflow-hidden bg-gray-800 text-white bg-cover bg-center' style={{ backgroundImage: `url(${bg})` }}>
+        <div id='about' className='about relative h-[160vh] md:h-[100vh] lg:h-[120vh] 2xl:h-[100vh] w-full overflow-hidden bg-gray-800 text-white bg-cover bg-center' style={{ backgroundImage: `url(${bg})` }}>
             <div className='absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-b from-black/70 to-black/20 lg:to-black/60' />
             <img className='absolute h-[220px] top-[8%] translate-x-[-50%] md:translate-x-0 left-[50%]
             md:absolute lg:absolute lg:left-[70%] lg:top-[30%] lg:h-[200px] md:left-[65%] md:top-[15%] md:h-[180px] sm:h-[120px] sm:right-[30%] sm:top-[20%]  2xl:h-[350px] 2xl:top-[15%]' src={logo} alt="" />

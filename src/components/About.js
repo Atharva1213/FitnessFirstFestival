@@ -8,7 +8,7 @@ AOS.init();
 
 function About() {
     return (
-        <div id='about' className='about relative h-[160vh] md:h-[100vh] lg:h-[120vh] 2xl:h-[100vh] w-full overflow-hidden bg-gray-800 text-white bg-cover bg-center' style={{ backgroundImage: `url(${bg})` }}>
+        <div id='about' className='about relative h-[210vh] md:h-[110vh] lg:h-[120vh] 2xl:h-[100vh] w-full overflow-hidden bg-gray-800 text-white bg-cover bg-center ' style={{ backgroundImage: `url(${bg})` }}>
             <div className='absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-b from-black/70 to-black/20 lg:to-black/60' />
             <img className='absolute h-[220px] top-[8%] translate-x-[-50%] md:translate-x-0 left-[50%]
             md:absolute lg:absolute lg:left-[70%] lg:top-[30%] lg:h-[200px] md:left-[65%] md:top-[15%] md:h-[180px] sm:h-[120px] sm:right-[30%] sm:top-[20%]  2xl:h-[350px] 2xl:top-[15%]' src={logo} alt="" />
@@ -18,10 +18,12 @@ function About() {
                     <h1 className='font-aboutFont text-[2.5rem] font-semibold 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-3xl'>Be <span className='text-orange-600 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-3xl '>Fit.</span></h1>
                     <h1 className='font-aboutFont text-[2.5rem] font-semibold 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-3xl'>Be <span className=''>St<span className='text-blue-500 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-3xl'>ro</span>ng.</span></h1>
                     <h1 className='font-aboutFont text-[2.5rem] font-semibold 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-3xl'>Be <span className='text-green-600 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-3xl'>Enthusiastic.</span></h1>
-                    <p className='text-base font-bannerfont mt-4 lg:text-base 2xl:text-xl md:text-xl sm:mt-8 md:mt-10 lg:mt-0 sm:text-xs'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis.</p>
+                    <p className='text-base font-bannerfont mt-4 lg:text-base 2xl:text-xl md:text-xl sm:mt-8 md:mt-10 lg:mt-0 sm:text-xs'>PCCOE Welcomes you to its Fitness First Festival 2023-2024</p>
                     <h1 className='text-6xl font-bannerfont mt-10 md:mt-0'>~</h1>
                 </div>
-                <p className='max-w-2xl text-base font-bannerfont text-white lg:text-sm 2xl:text-xl md:text-2xl sm:text-xs mt-20 md:mt-10 lg:mt-0' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et odit maxime excepturi, ullam enim aliquid nemo error nobis perspiciatis iste aperiam fuga fugiat qui quos molestias in asperiores quia iure repellat voluptatibus perferendis quisquam minima. Odit repudiandae ipsa quia vitae praesentium id dicta, nihil tempora quas totam repellendus tempore iure, aut voluptatibus earum consequatur nemo. Eius unde possimus provident quas, aperiam nemo laborum earum aliquid ipsa deleniti molestiae dolores quos sed aspernatur. Tenetur minus, natus autem molestiae fugit tempora odit assumenda voluptatum cumque nesciunt cupiditate voluptas. Impedit, dicta debitis, asperiores quia rem et eos eligendi vero quas, itaque maiores!</p>
+                <p className='max-w-2xl text-base font-bannerfont text-white lg:text-sm 2xl:text-xl md:text-2xl sm:text-xs mt-20 md:mt-10 lg:mt-0' >Pimpri Chinchwad College of Engineering (PCCoE) acknowledges that future professionals will face various work-related challenges like performance pressure, long hours, sedentary lifestyles, and mental stress. Handling these demands while progressing in one's career requires efficient strategies. Without proper health management, earnings lose significance. Thus, mastering stress reduction through physical and mental workouts, especially during student years, becomes vital.<br/><br/>
+                    To equip students with skills to excel under pressure and manage stress, PCCoE introduces the "PCCoE Fitness First Festival Year 2023-24." This year-long event (July 1, 2023 - June 30, 2024) will offer fitness-related activities exclusively for students, staff, and faculty. The festival's objective is to instill a passion for maintaining physical and mental well-being, enabling participants to overcome life's challenges.
+                    The inauguration of the "PCCoE Fitness First Festival Year 2023-24" took place on June 29, 2023, with <span className='font-bold text-orange-500'>Shri. Nitin Gadkariji, Union Minister of Road Transport</span>, as the chief guest.</p>
             </div>
         </div>
     )

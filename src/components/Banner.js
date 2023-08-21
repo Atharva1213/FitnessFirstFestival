@@ -34,8 +34,8 @@ export default function Banner() {
 
                 </div>
 
-                <div className="hover-4 quote absolute lg:right-[4%] lg:bottom-[8%] bottom-[3%] right-[1px] text-white lg:max-w-xl max-w-sm p-5">
-                    <h3 className='quote a text-md lg:text-xl font-bannerfont italic'>Fitness is not just about the body; it's a journey that strengthens the mind, nourishes the soul, and empowers us to embrace life's challenges with vitality.</h3>
+                <div className="hover-4 quote absolute lg:right-[4%] lg:bottom-[8%] bottom-[3%] right-[1px] text-white lg:max-w-xl max-w-xs sm:max-w-lg p-5">
+                    <h3 className='quote a  text-xs leading-5 sm:leading-6  sm:text-xl md:text-2xl lg:text-xl font-bannerfont italic'>Fitness is not just about the body; it's a journey that strengthens the mind, nourishes the soul, and empowers us to embrace life's challenges with vitality.</h3>
                     <h4 className='text-lg mt-4 font-bannerfont'> - Alex Trevor</h4>
                 </div>
 

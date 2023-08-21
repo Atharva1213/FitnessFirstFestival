@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     transition: .6s;
-    /* z-index: 99; */
+    z-index: 20;
 }
 
 .profile-card123:hover .img123 {

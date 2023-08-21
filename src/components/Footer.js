@@ -22,12 +22,12 @@ function Footer() {
                 </div>
                 <div className="w-full h-fit lg:w-[40%] flex flex-col gap-10  md:items-center lg:items-start">
                     <h2 className="uppercase text-xl font-bold tracking-widest text-pink-600 ">
-                        hours of operation
+                        Days Of Operation
                     </h2>
                     <div className="text-[17px] tracking-wide">
-                        <p>Mon-Thu: 9AM-8PM</p>
-                        <p>Friday: 9AM-3PM</p>
-                        <p>Sat-Sun: Closed</p>
+                        <p>Mon-Fri: Weekly Activities</p>
+                        <p>Non-Working Sat: Surprise Activities</p>
+                        <p>Sun: Closed</p>
                     </div>
                 </div>
 
@@ -38,12 +38,13 @@ function Footer() {
                         contact us
                     </h2>
                     <div className="text-[17px] tracking-wide">
-                        <p>500 Terry Francine Street</p>
-                        <p>San Francisco, CA 94158</p>
+                        <p>Sector -26, Pradhikaran, Nigdi,</p>
+                        <p>Near Akurdi Railway Station,</p>
+                        <p>Pune - 411 044.</p>
                     </div>
                     <div className="text-[17px] tracking-wide">
-                        <p>Mail: info@mysite.com</p>
-                        <p>Tel: 123-456-7890</p>
+                        <p>Mail: pccoeadmin@gmail.com </p>
+                        <p>Contact: +91 8087174347</p>
                     </div>
                 </div>
                 <div className="w-full h-fit lg:w-[40%] flex flex-col items-start gap-6 lg:pl-6 md:items-center lg:items-start md:mt-12 lg:mt-6">
@@ -51,10 +52,10 @@ function Footer() {
                         menu
                     </h2>
                     <ul className="list-square text-[17px] marker:text-pink-600 pl-6 lg:pl-6 cursor-pointer">
-                        <li className=" hover:text-gray-300">Services</li>
+                        <li className=" hover:text-gray-300">Home</li>
                         <li className=" hover:text-gray-300">About</li>
-                        <li className=" hover:text-gray-300">Plans</li>
-                        <li className=" hover:text-gray-300">Online Programs </li>
+                        <li className=" hover:text-gray-300">Gallery</li>
+                        <li className=" hover:text-gray-300">Activities</li>
                         <li className=" hover:text-gray-300">Contact</li>
                     </ul>
                     <button className="py-3 px-8 border border-1 border-pink-600 text-white text-2xl font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button>

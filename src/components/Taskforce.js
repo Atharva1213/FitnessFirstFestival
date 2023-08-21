@@ -134,10 +134,14 @@ function TaskForce() {
                                 <h1 className="text-lg md:text-lg font-medium">Convener</h1>
                                 <h1 className="md:text-lg">leena.sharma@pccoepune.org</h1>
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
-                                <div className="handles flex gap-2">
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
+                                <div className="handles flex gap-4">
+                                    <a className="text-2xl a123"
+                                        href=""><i class="fab fa-linkedin"></i></a>
+                                    <a className="text-2xl a123"
+                                        href="">
+                                        <i className="fab fa-instagram"></i>
+                                    </a>
+                                    <a className="text-2xl a123" href=""><i className="fas fa-at"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -152,10 +156,14 @@ function TaskForce() {
                                 <h1 className="text-lg md:text-lg font-medium">Convener</h1>
                                 <h1 className="md:text-lg">leena.sharma@pccoepune.org</h1>
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
-                                <div className="handles flex gap-2">
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
+                                <div className="handles flex gap-4">
+                                    <a className="text-2xl a123"
+                                        href=""><i class="fab fa-linkedin"></i></a>
+                                    <a className="text-2xl a123"
+                                        href="">
+                                        <i className="fab fa-instagram"></i>
+                                    </a>
+                                    <a className="text-2xl a123" href=""><i className="fas fa-at"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -170,10 +178,14 @@ function TaskForce() {
                                 <h1 className="text-lg md:text-lg font-medium">Convener</h1>
                                 <h1 className="md:text-lg">leena.sharma@pccoepune.org</h1>
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
-                                <div className="handles flex gap-2">
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
-                                    <TiSocialLinkedinCircular className="text-3xl md:text-5xl lg:text-4xl" />
+                                <div className="handles flex gap-4">
+                                    <a className="text-2xl a123"
+                                        href=""><i class="fab fa-linkedin"></i></a>
+                                    <a className="text-2xl a123"
+                                        href="">
+                                        <i className="fab fa-instagram"></i>
+                                    </a>
+                                    <a className="text-2xl a123" href=""><i className="fas fa-at"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -12,8 +12,7 @@ export default function Navbar() {
     const [bg, setBg] = useState('slate-800/60')
     const [border, setBorder] = useState('2')
     const [type,setType]=useState('fixed')
-    const[zvalue,setZvalue]=useState('[100000002]');
-    const[count,setCount]=useState(0);
+   
     
 
     useEffect(() => {
@@ -32,7 +31,7 @@ export default function Navbar() {
                 setColor('transparent');
                 setTextColor('orange-600');
                 setType('static')
-                setZvalue('30')
+                
                 
             }
         };
@@ -54,24 +53,9 @@ export default function Navbar() {
     }, [nav]);
 
     const handleNav = () => {
-        setNav(!nav);
-        setType('static');
+        setNav(!nav)
+        setType('static')
        
-        let temp=count+1;
-        setCount(temp);      
-        if(count==1){
-            setZvalue('[100000002]');
-
-        }
-        
-        else if(temp%2==0){
-            setZvalue('30');
-            
-        }
-        else{
-            setZvalue('[100000002]');
-        
-        }
         
     }
     
@@ -89,10 +73,9 @@ export default function Navbar() {
         <>
             <div style={{ backgroundColor: `${color}` ,transition: `background-color 0.3s ease`, position:`${type}`} } className={`z-[50] navbar text-white flex justify-between px-20 py-8 font-bannerfont font-semibold text-lg md:static md:w-full `}>
                 <ul className={`tagline border-${border} border-white bg-${bg}`}>
-                    <h2 className={`tag py-5 px-5 text-${textColor}`}><span className='text-2xl'>--</span> Commit To Be Fit.</h2>
-                    <div onClick={handleNav} className={`icon sm:hidden z-${zvalue} text-2xl `}>
-                        {nav ? <AiOutlineClose size={20} /> : <GiHamburgerMenu />}
-                    </div>
+                    <h2 className={`tag py-5 px-5 text-${textColor}`}><span className='text-2xl'>--</span> Commit To Be Fit.</h2>                    
+                        {nav ? <AiOutlineClose size={20} onClick={handleNav} className={`icon sm:hidden text-2xl z-[100000005]  `} /> : <GiHamburgerMenu onClick={handleNav}  className={`icon sm:hidden text-2xl z-50`} />}
+                   
                 </ul>
                 <ul className='nav-items flex w-[36rem] bg-slate-900/60 text-white rounded-sm border border-1 border-[#F94C10]' >
                     <li className='py-5 px-8 w-[9rem] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>Home</li>

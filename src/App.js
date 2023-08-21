@@ -10,11 +10,13 @@ import TaskForce from './components/Taskforce';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 import DevelopedBy from './components/DevelopedBy/DevelopedBy';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
     <div className='relative'>
+     
       <Banner />
       <About />
       <Numbers />

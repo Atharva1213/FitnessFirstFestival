@@ -41,7 +41,7 @@ function Announcement() {
     }, [announcements.length]);
 
     return (
-        <div className="bottom-3 right-4 lg:bottom-6 lg:right-14 fixed z-50">
+        <div className="bottom-3 right-4 lg:bottom-6 lg:right-14 fixed z-[100000000]">
             <button
                 className="mr-1.5 inline-block rounded bg-primary p-2 lg:px-6 lg:pb-2 lg:pt-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] py-4 bg-[#ff0054]"
                 type="button"
@@ -59,13 +59,13 @@ function Announcement() {
             </button>
 
             <div
-                className=" w-full invisible fixed bottom-0 right-0 top-0 z-[2045] flex lg:w-96 max-w-full translate-x-full flex-col border-none bg-gray-900 bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
+                className=" w-full invisible fixed bottom-0 right-0 top-0 z-[100000004] flex lg:w-96 max-w-full translate-x-full flex-col border-none bg-gray-900 bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none "
                 tabIndex="-1"
                 id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel"
                 data-te-offcanvas-init
             >
-                <div className=" flex items-center justify-between p-4">
+                <div className=" flex items-center justify-between p-4 z-[100000004]">
                     <h5
                         className="mb-0 font-bold text-lg leading-normal text-orange-600"
                         id="offcanvasRightLabel"
@@ -97,7 +97,7 @@ function Announcement() {
                         </span>
                     </button>
                 </div>
-                <div className="offcanvas-body z-[1000] flex-grow overflow-y-auto p-8">
+                <div className="offcanvas-body z-[100000005] flex-grow overflow-y-auto p-8">
                     {announcements.map((announcement, index) => (
                         <div
                             key={index}

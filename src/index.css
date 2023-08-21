@@ -116,14 +116,14 @@ code {
   }
 
   .tagline {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 10px;
     font-size: 1rem;
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(15, 23, 42, 0.751);
+    /* background-color: rgba(15, 23, 42, 0.751); */
 
   }
 
@@ -150,7 +150,6 @@ code {
 
   .tag {
     padding: 0;
-    color: #e96202
   }
 
   .icon {
@@ -179,14 +178,14 @@ code {
   }
 
   .tagline {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 16px;
     font-size: 1.5rem;
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(15, 23, 42, 0.751);
+    /* background-color: rgba(15, 23, 42, 0.751); */
 
   }
 
@@ -215,8 +214,8 @@ code {
 
   .tag {
     padding: 0;
-    color: #e96202
-  }
+    /* color: #e96202*/
+  } 
 
   .icon {
     display: block;

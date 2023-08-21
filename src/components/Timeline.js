@@ -75,13 +75,13 @@ function Timeline() {
     return (
         <div className='h-full w-full flex flex-col  lg:flex-row font-bannerfont bg-gradient-to-bl from-pink-700 via-black to-black'>
             <div className='p-4 flex flex-col gap-8 lg:w-[55%]'>
-                <div className='flex flex-col gap-4 pt-8 pl-8 justify-center'>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className='flex flex-col gap-4 pt-8 pl-8 justify-center'>
                     <h1 className='text-3xl md:text-5xl font-semibold text-white'>
                         Timeline
                     </h1>
                     <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[10%]"></div>
                 </div>
-                <div className="cursor overflow-auto left w-full h-[80vh] lg:w-full p-4 lg:pl-16 md:pt-8 flex flex-col gap-[3.5rem] ">
+                <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300" className="cursor overflow-auto left w-full h-[80vh] lg:w-full p-4 lg:pl-16 md:pt-8 flex flex-col gap-[3.5rem] ">
                     <ol className="relative border-l-2 border-pink-600">
                         {sortedEvents.map((event, index) => (
                             <li key={index} className="mb-10 ml-4">
@@ -98,12 +98,12 @@ function Timeline() {
                     </ol>
                 </div>
             </div>
-            <div className="right w-full lg:w-[45%] py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-1 gap-8 lg:gap-16 lg:bg-gradient-to-bl bg-gradient-to-t from-pink-700 via-black to-black">
+            <div className="right w-full overflow-hidden lg:w-[45%] py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-1 gap-8 lg:gap-16 lg:bg-gradient-to-bl bg-gradient-to-t from-pink-700 via-black to-black">
                 <div className="flex flex-col justify-center">
-                    <h1 className="mb-4 text-4xl font-medium font-bannerfont tracking-tight leading-none text-orange-600 md:text-5xl lg:text-6xl ">Our Trailer is OUT!</h1>
-                    <p className="mb-8 text-lg  text-white lg:text-xl font-medium ">📽️ Watch the exhilarating trailer on YouTube and get ready to be motivated and energized. Don't miss out on this incredible fitness journey!
+                    <h1 data-aos="fade-left" data-aos-offset="200" data-aos-duration="1300" className="mb-4 text-4xl font-medium font-bannerfont tracking-tight leading-none text-orange-600 md:text-5xl lg:text-6xl ">Our Trailer is OUT!</h1>
+                    <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300" className="mb-8 text-lg  text-white lg:text-xl font-medium ">📽️ Watch the exhilarating trailer on YouTube and get ready to be motivated and energized. Don't miss out on this incredible fitness journey!
                         👍 Like, 💬 Comment, and 🔄 Share the video to spread the fitness spirit. 🔥</p>
-                    <div className="flex flex-col space-y-4 sm:items-center sm:flex-row sm:space-y-0 sm:space-x-4">
+                    <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col space-y-4 sm:items-center sm:flex-row sm:space-y-0 sm:space-x-4">
                         <a href="/" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 ">
                             Get started
                             <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -115,7 +115,7 @@ function Timeline() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300">
                     <iframe className="mx-auto w-full lg:max-w-6xl h-64 sm:h-96 rounded-lg shadow-3xl" src="https://www.youtube.com/embed/FKXRu9yoPh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>

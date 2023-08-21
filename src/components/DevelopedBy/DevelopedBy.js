@@ -4,11 +4,11 @@ import './DevelopedBy.css'
 function DevelopedBy() {
     return (
         <div className='bg-gradient-to-tr from-pink-600 via-black to-black'>
-            <div className='flex flex-col items-center p-4 gap-2'>
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className='flex flex-col items-center p-4 gap-2'>
                 <h1 className='text-white text-4xl font-bannerFont2 text-center'>Developer's Corner</h1>
                 <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[10%]"></div>
             </div>
-            <div className="main123">
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="main123">
                 <div className='main456 md:flex md:gap-20'>
                     <div className="profile-card123 bg-gradient-to-t from-orange-600 via-pink-600 to-pink-800">
                         <div className="img123">

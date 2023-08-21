@@ -11,9 +11,10 @@ export default function Navbar() {
     const [textColor, setTextColor] = useState('orange-500')
     const [bg, setBg] = useState('slate-800/60')
     const [border, setBorder] = useState('2')
-    const [type,setType]=useState('fixed')
-   
-    
+    const [borderCol, setBorderCol] = useState('[#F94C10]')
+    const [type, setType] = useState('fixed')
+
+
 
     useEffect(() => {
         const changeColor = () => {
@@ -21,18 +22,18 @@ export default function Navbar() {
                 setBg('#ff0054')
                 setColor('#ff0054');
                 setTextColor('white');
-                setBorder('0')
+                setBorder('2')
                 setType('fixed')
-                
-                
+                setBorderCol('white')
+
             } else {
                 setBorder('2')
                 setBg('slate-800/60')
                 setColor('transparent');
                 setTextColor('orange-600');
                 setType('static')
-                
-                
+                setBorderCol('[#F94C10]')
+
             }
         };
 
@@ -55,10 +56,10 @@ export default function Navbar() {
     const handleNav = () => {
         setNav(!nav)
         setType('static')
-       
-        
+
+
     }
-    
+
 
 
 
@@ -71,13 +72,13 @@ export default function Navbar() {
     };
     return (
         <>
-            <div style={{ backgroundColor: `${color}` ,transition: `background-color 0.3s ease`, position:`${type}`} } className={`z-[50] navbar text-white flex justify-between px-20 py-8 font-bannerfont font-semibold text-lg md:static md:w-full `}>
-                <ul className={`tagline border-${border} border-white bg-${bg}`}>
-                    <h2 className={`tag py-5 px-5 text-${textColor}`}><span className='text-2xl'>--</span> Commit To Be Fit.</h2>                    
-                        {nav ? <AiOutlineClose size={20} onClick={handleNav} className={`icon sm:hidden text-2xl z-[100000005]  `} /> : <GiHamburgerMenu onClick={handleNav}  className={`icon sm:hidden text-2xl z-50`} />}
-                   
+            <div style={{ backgroundColor: `${color}`, transition: `background-color 0.3s ease`, position: `${type}` }} className={`z-[50] navbar text-white flex justify-between px-20 py-8 font-bannerfont font-semibold text-lg md:static md:w-full `}>
+                <ul className={`tagline border-${border} border-${borderCol} bg-${bg}`}>
+                    <h2 className={`tag py-5 px-5 text-${textColor}`}><span className='text-2xl'>--</span> Commit To Be Fit.</h2>
+                    <GiHamburgerMenu onClick={handleNav} className={`icon lg:hidden text-2xl z-50`} />
+
                 </ul>
-                <ul className='nav-items flex w-[36rem] bg-slate-900/60 text-white rounded-sm border border-1 border-[#F94C10]' >
+                <ul className={`nav-items flex w-[36rem] bg-slate-900/60 text-white rounded-sm border border-1 border-${borderCol}`} >
                     <li className='py-5 px-8 w-[9rem] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>Home</li>
                     <li
                         className='relative group py-5 px-8 w-[9rem] hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'
@@ -99,10 +100,11 @@ export default function Navbar() {
                 </ul>
 
             </div>
-            <div className={nav ? ` overflow-auto mobile-nav sm:hidden absolute top-0 left-0 right-0 bottom-0 h-screen w-full flex flex-col justify-start gap-12 pt-20 items-center ease-in duration-300 bg-pink-700 z-[100000001] mobile-nav ` : `overflow-auto mobile-nav sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 h-auto w-full flex flex-col justify-start gap-12 pt-20 items-center ease-in duration-300 bg-pink-700 z-[100000001] `}>
+            <div className={nav ? `overflow-auto mobile-nav lg:hidden fixed top-0 left-0 right-0 bottom-0 h-[100vh] w-[100%] sm:w-[60%] flex flex-col justify-start gap-12 pt-20 items-center ease-in duration-300 bg-pink-700 z-[100000001] mobile-nav ` : `overflow-auto mobile-nav lg:hidden fixed top-0 left-[-100%] right-0 bottom-0 h-[100vh] w-[100%] flex flex-col justify-start gap-12 pt-20 items-center ease-in duration-300 bg-pink-700 z-[100000001] `}>
+                <AiOutlineClose size={30} onClick={handleNav} className='icon lg:hidden text-white font-bold absolute top-[4%] right-[10%] z-[10000000]' />
                 <img className='h-[25%]' src={logo} alt="" />
 
-                <ul className='text-white text-3xl flex flex-col gap-8 items-center justify-center font-bannerFont2'>
+                <ul className='text-white text-3xl sm:text-4xl flex flex-col gap-8 sm:gap-16 items-center justify-center font-bannerFont2'>
                     <li>Home</li>
                     <li>About</li>
                     <li>Gallery</li>

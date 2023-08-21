@@ -20,15 +20,15 @@ import sportsclub from "../Images/sportsclub.jpg"
 import { Carousel } from "flowbite-react";
 export default function EventPlanned() {
   return (
-    <div className="h-[auto] w-full bg-gradient-to-br from-pink-900 via-black to-black py-4">
-      <div className="flex flex-col items-center gap-4">
+    <div className="overflow-hidden  h-[auto] w-full bg-gradient-to-br from-pink-900 via-black to-black py-4">
+      <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-4">
         <h1 className="text-3xl lg:text-5xl font-semibold text-center mx-auto text-white">
           what are the EVENTS PLANNED ?
         </h1>
         <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
       </div>
       <div className="grid grid-rows-3 gap-5 lg:px-6 py-4 lg:py-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-[60vh] md:h-[100vh] lg:h-[60vh] w-full">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-[60vh] md:h-[100vh] lg:h-[60vh] w-full">
           <div className="relative">
             <div className="h-80 w-full md:h-full xl:h-full">
               <Carousel slideInterval={2000} className="p-2 h-full w-full">
@@ -77,7 +77,7 @@ export default function EventPlanned() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-auto w-full">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1300" className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-auto w-full">
           <div className="order-2 lg:order-first p-4 lg:p-10 m-auto flex flex-col gap-8 lg:gap-16">
             <h1 className="g:text-4xl text-4xl text-white">
               PCCOE{" "}
@@ -196,7 +196,7 @@ export default function EventPlanned() {
               </Carousel>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-auto w-full">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-auto w-full">
           <div className="lg:order-last p-4 lg:p-10 m-auto flex flex-col gap-8 lg:gap-16">
             <h1 className="g:text-4xl text-4xl text-white">
               Weekly{" "}

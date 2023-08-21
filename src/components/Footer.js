@@ -6,7 +6,7 @@ import logo from '../Images/logo.png'
 function Footer() {
     return (
         <div className="h-full md:h-[80vh] md:pt-16 lg:h-[60vh] xl:h-[60vh] 2xl:[45vh] w-full text-white bg-black flex flex-col lg:flex-row justify-start lg:justify-around gap-4 p-4 items-start px-6 lg:px-0 lg:pt-16">
-            <div className="text-xl md:flex md:items-center md:gap-10 md:text-3xl md:w-full md:justify-center lg:w-[100%] lg:justify-center lg:gap-[70px] lg:text-2xl 2xl:gap-56 2xl:text-4xl">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300" className="text-xl md:flex md:items-center md:gap-10 md:text-3xl md:w-full md:justify-center lg:w-[100%] lg:justify-center lg:gap-[70px] lg:text-2xl 2xl:gap-56 2xl:text-4xl">
                 <div className="w-full h-fit lg:w-[26%] text-white flex flex-col gap-8  md:items-center lg:items-start">
                     <div className="heading tracking-widest justify-center items-center flex flex-row md:flex-row md:gap-4 lg:flex-col lg:gap-0 gap-2">
                         <img className="h-52 lg:h-[220px]" src={logo} alt="" />
@@ -32,7 +32,7 @@ function Footer() {
                 </div>
 
             </div>
-            <div className="text-xl md:flex md:items-center md:gap-10 md:text-3xl md:w-full md:justify-center lg:w-[100%] lg:justify-center lg:gap-[70px] lg:text-2xl 2xl:gap-56 2xl:text-4xl ">
+            <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300" className="text-xl md:flex md:items-center md:gap-10 md:text-3xl md:w-full md:justify-center lg:w-[100%] lg:justify-center lg:gap-[70px] lg:text-2xl 2xl:gap-56 2xl:text-4xl ">
                 <div className="w-full h-fit lg:w-[32%] flex flex-col gap-10  md:items-center lg:items-start lg:mt-[-40px]">
                     <h2 className="uppercase text-xl font-bold tracking-widest text-pink-600">
                         contact us

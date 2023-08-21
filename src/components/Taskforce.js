@@ -36,12 +36,12 @@ const carousel2Data = [
 function TaskForce() {
     return (
         <div className="min-h-[350vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
-            <div className="flex flex-col items-center gap-2">
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-2">
                 <h1 className="text-5xl text-center font-bannerFont2 text-white">Our Team</h1>
                 <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[5%]"></div>
             </div>
             <div className="lg:h-[60vh] h-[100vh] mt-8 flex flex-col gap-6 lg:gap-8 lg:flex-row justify-center">
-                <div className="h-[45%] xl:h-[100%] w-full lg:w-[45%] ">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="h-[45%] xl:h-[100%] w-full lg:w-[45%] ">
                     <Carousel slideInterval={2000}>
                         <div
                             className="h-[100%] w-[100%] bg-cover bg-center"
@@ -58,7 +58,7 @@ function TaskForce() {
                     </Carousel>
                 </div>
 
-                <div className="h-[45%] xl:h-[100%] w-full lg:w-[45%] bg-[#FFE17B]">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="h-[45%] xl:h-[100%] w-full lg:w-[45%] bg-[#FFE17B]">
                     <Carousel slideInterval={1000000000} className="right-car border-8 border-[#FD8D14] ">
                         <div className="flex h-full items-center justify-center">
                             <div className=" text-white text-center w-[90%] md:w-[80%] lg:w-[70%]">
@@ -119,11 +119,11 @@ function TaskForce() {
             </div>
 
             <div className="h-[80vh] main-taskforce mt-24">
-                <div className="flex flex-col items-center gap-4">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-4">
                     <div className="text-center text-3xl md:text-5xl lg:text-4xl font-semibold text-white font-bannerFont2">Main Foundation Team</div>
                     <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[40%] lg:w-[10%]"></div>
                 </div>
-                <div className="pt-36 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-28 lg:gap-0">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="pt-36 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-28 lg:gap-0">
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">

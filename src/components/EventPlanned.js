@@ -20,7 +20,7 @@ import sportsclub from "../Images/sportsclub.jpg"
 import { Carousel } from "flowbite-react";
 export default function EventPlanned() {
   return (
-    <div className="overflow-hidden  h-[auto] w-full bg-gradient-to-br from-pink-900 via-black to-black py-4">
+    <div id="eventsPlanned" className="overflow-hidden  h-[auto] w-full bg-gradient-to-br from-pink-900 via-black to-black py-4">
       <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-4">
         <h1 className="text-3xl lg:text-5xl font-semibold text-center mx-auto text-white">
           what are the EVENTS PLANNED ?

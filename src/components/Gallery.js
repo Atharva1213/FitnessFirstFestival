@@ -75,7 +75,7 @@ const galleryData = [
 
 function Gallery() {
   return (
-    <div className="overflow-hidden h-auto w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-rows-3">
+    <div id="gallery" className="overflow-hidden h-auto w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-rows-3">
       {galleryData.map((item, index) => (
         item.unHide ? <div className="flex justify-center items-center h-[25vh] md:h-[25vh] lg:h-[30vh] xl:h-[40vh] w-full bg-pink-900">
           <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className='flex flex-col items-center gap-4'>

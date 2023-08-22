@@ -73,7 +73,7 @@ const sortedEvents = events.slice().sort((a, b) => {
 
 function Timeline() {
     return (
-        <div className='h-full w-full flex flex-col  lg:flex-row font-bannerfont bg-gradient-to-bl from-pink-700 via-black to-black'>
+        <div id="timeline" className='h-full w-full flex flex-col  lg:flex-row font-bannerfont bg-gradient-to-bl from-pink-700 via-black to-black'>
             <div className='p-4 flex flex-col gap-8 lg:w-[55%]'>
                 <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className='flex flex-col gap-4 pt-8 pl-8 justify-center'>
                     <h1 className='text-3xl md:text-5xl font-semibold text-white'>

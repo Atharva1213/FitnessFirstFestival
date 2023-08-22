@@ -5,12 +5,13 @@ import trekking from '../Images/trekking.jpg'
 import marathon from '../Images/marathon.jpg'
 import Card from '../components/Card'
 import Navbar from './Navbar';
+import { Link } from 'react-scroll';
 
 export default function Banner() {
 
     return (
         <div>
-            <div className='banner h-screen w-full bg-cover lg:bg-center relative' style={{ backgroundImage: `url(${bg})` }}>
+            <div id="home" className='banner h-screen w-full bg-cover lg:bg-center relative' style={{ backgroundImage: `url(${bg})` }}>
                 <div id="alert-1" className="hidden gap-2 xl:block absolute top-6 left-[25%] items-center p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
                     <svg className="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
@@ -30,7 +31,17 @@ export default function Banner() {
                         <h3 className='title-year text-3xl pl-1 font-bannerFont2 lg:font-semibold text-cyan-500'>2023-24</h3>
                     </div>
 
-                    <button className='border border-1 px-6 py-2 text-xl mt-10 rounded-md hover:bg-[#ff0054] hover:border-[#ff0054] transition duration-300 font-bannerfont '>Xplore More</button>
+                    <button className='border border-1 px-6 py-2 text-xl mt-10 rounded-md hover:bg-[#ff0054] hover:border-[#ff0054] transition duration-300 font-bannerfont '><Link
+                            activeClass="active"
+                            to="timeline"
+                            spy={true}
+                            smooth={true}
+                            offset={-100} // Adjust the offset as needed
+                            duration={500} // Adjust the duration of the scroll animation
+                        >
+                            Xplore More
+
+                        </Link></button>
 
                 </div>
 

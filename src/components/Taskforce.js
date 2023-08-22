@@ -35,7 +35,7 @@ const carousel2Data = [
 
 function TaskForce() {
     return (
-        <div className="min-h-[350vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
+        <div id="taskforce" className="min-h-[350vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
             <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-2">
                 <h1 className="text-5xl text-center font-bannerFont2 text-white">Our Team</h1>
                 <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[5%]"></div>

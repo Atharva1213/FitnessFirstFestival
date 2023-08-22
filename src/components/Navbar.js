@@ -220,7 +220,7 @@ export default function Navbar() {
                         spy={true}
                         smooth={true}
                         offset={-100000} // Adjust the offset as needed
-                        duration={500} // Adjust the duration of the scroll animation
+                        duration={10000} // Adjust the duration of the scroll animation
                     >
                         Home
 
@@ -231,7 +231,7 @@ export default function Navbar() {
                         spy={true}
                         smooth={true}
                         offset={-100} // Adjust the offset as needed
-                        duration={500} // Adjust the duration of the scroll animation
+                        duration={1500} // Adjust the duration of the scroll animation
                     >
                         About Us
 
@@ -242,7 +242,7 @@ export default function Navbar() {
                         spy={true}
                         smooth={true}
                         offset={-105} // Adjust the offset as needed
-                        duration={500} // Adjust the duration of the scroll animation
+                        duration={1500} // Adjust the duration of the scroll animation
                     >
                         Gallery
 
@@ -254,7 +254,7 @@ export default function Navbar() {
                         spy={true}
                         smooth={true}
                         offset={-70} // Adjust the offset as needed
-                        duration={500} // Adjust the duration of the scroll animation
+                        duration={1500} // Adjust the duration of the scroll animation
                     >
                         Activities
 
@@ -265,7 +265,7 @@ export default function Navbar() {
                         spy={true}
                         smooth={true}
                         offset={-70} // Adjust the offset as needed
-                        duration={500} // Adjust the duration of the scroll animation
+                        duration={1500} // Adjust the duration of the scroll animation
                     >
                         Taskforce
 

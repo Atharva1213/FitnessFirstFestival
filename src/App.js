@@ -16,24 +16,27 @@ import LandscapeModeOverlay from './components/LandscapeModeOverlay';
 
 function App() {
 
-  const [isLandscape, setIsLandscape] = useState(false);
+  const [isLandscape, setIsLandscape] = useState(
+    window.matchMedia('(orientation: landscape)').matches
+  );
 
   useEffect(() => {
-    const handleOrientationChange = () => {
-      setIsLandscape(window.matchMedia('(orientation: portrait)').matches);
+    const handleOrientationChange = (event) => {
+      setIsLandscape(event.matches);
     };
 
-    handleOrientationChange(); // Initial check
-    window.addEventListener('orientationchange', handleOrientationChange);
+    const mediaQuery = window.matchMedia('(orientation: landscape)');
+    mediaQuery.addListener(handleOrientationChange);
+    handleOrientationChange(mediaQuery); // Initial check
 
     return () => {
-      window.removeEventListener('orientationchange', handleOrientationChange);
+      mediaQuery.removeListener(handleOrientationChange);
     };
   }, []);
 
   return (
     <div className='relative'>
-     
+
       <Banner />
       <About />
       <Numbers />
@@ -41,8 +44,8 @@ function App() {
       <Timeline />
       <EventPlanned />
       <Gallery />
-      <DevelopedBy/>
-      <Footer/>
+      <DevelopedBy />
+      <Footer />
       {/* <EventCorousel/> */}
       <Announcement />
       <LandscapeModeOverlay show={isLandscape} />

@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Announcement from './components/Announcement';
 import Banner from './components/Banner';
@@ -10,10 +11,26 @@ import TaskForce from './components/Taskforce';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 import DevelopedBy from './components/DevelopedBy/DevelopedBy';
-import Navbar from './components/Navbar';
+import LandscapeModeOverlay from './components/LandscapeModeOverlay';
 
 
 function App() {
+
+  const [isLandscape, setIsLandscape] = useState(false);
+
+  useEffect(() => {
+    const handleOrientationChange = () => {
+      setIsLandscape(window.matchMedia('(orientation: portrait)').matches);
+    };
+
+    handleOrientationChange(); // Initial check
+    window.addEventListener('orientationchange', handleOrientationChange);
+
+    return () => {
+      window.removeEventListener('orientationchange', handleOrientationChange);
+    };
+  }, []);
+
   return (
     <div className='relative'>
      
@@ -28,7 +45,7 @@ function App() {
       <Footer/>
       {/* <EventCorousel/> */}
       <Announcement />
-
+      <LandscapeModeOverlay show={isLandscape} />
     </div>
 
   );

@@ -168,6 +168,7 @@
     .profile-card123 .img1234 {
         border-radius: 10px;
     }
+   
 
 }
 
@@ -179,15 +180,79 @@
         flex-direction: row;
     }
     
+    
 
 }
 
 @media screen and (min-width: 1280px) {
     .main123 {
         height: 45vh;
+        gap: 80px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .profile-card123{
+        height: 170px;
+        width: 170px;
+    }
+    .caption123 .h3123 {
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+    
+    .caption123 .p123 {
+        font-size: 10px;
+        font-family: sans-serif;
+        margin: 2px 0 9px 0;
+    }
+    
+    .caption123 .social-links123 .a123 {
+        font-size: 15px;
+        transition: .6s;
+    }
+    .profile-card123:hover {
+        border-radius: 8px;
+        height: 200px;
+    }
+    
+   
+    
+
+    
+}
+@media screen and (min-width: 1400px) {
+    .main123 {
+        height: 45vh;
         gap: 100px;
         width: 100%;
         flex-direction: row;
     }
+    .profile-card123 {
+        
+        width: 220px;
+        height: 220px;
+        
+    }
+    .caption123 .h3123 {
+        font-size: 21px;
+        font-family: sans-serif;
+    }
+    
+    .caption123 .p123 {
+        font-size: 15px;
+        font-family: sans-serif;
+        margin: 2px 0 9px 0;
+    }
+    
+    .caption123 .social-links123 .a123 {
+        font-size: 21px;
+        transition: .6s;
+    }
+    .profile-card123:hover {
+        border-radius: 10px;
+        height: 260px;
+    }
+    
+    
 
 }

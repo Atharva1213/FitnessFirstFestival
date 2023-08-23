@@ -1,35 +1,30 @@
 import React, { useEffect } from 'react';
-import bg from '../Images/bg-img.jpg';
+import trek from '../Images/trekking.jpg';
+import food from '../Images/food.jpg';
+import walk from '../Images/marathon.jpg';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
 
 function Announcement() {
     const [numOfAnn, setNumOfAnn] = React.useState(0)
     const announcements = [
         {
-            title: 'Cricket',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum recusandae exercitationem hic esse accusamus et quibusdam inventore repellendus harum?',
+            title: 'Trek & Plant',
+            description: 'Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature',
+            img:trek,
             link: '#',
         },
         {
             title: 'Walk-a-thon',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum recusandae exercitationem hic esse accusamus et quibusdam inventore repellendus harum?',
+            description: '"Walkathons" are community events promoting physical fitness and social awareness. Participants walk for charitable causes, raising funds and fostering a sense of community while supporting important initiatives',
+            img:food,
             link: '#',
         },
         {
             title: 'Cyclothon',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum recusandae exercitationem hic esse accusamus et quibusdam inventore repellendus harum?',
+            description: 'A "Healthy Food Fair" showcases nutritious and delicious culinary options, encouraging informed dietary choices. Attendees can explore diverse flavors and gain nutritional insights, promoting a healthier lifestyle.',
+            img:walk,
             link: '#',
-        },
-        {
-            title: 'Basketball',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum recusandae exercitationem hic esse accusamus et quibusdam inventore repellendus harum?',
-            link: '#',
-        },
-        {
-            title: 'Badminton',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum recusandae exercitationem hic esse accusamus et quibusdam inventore repellendus harum?',
-            link: '#',
-        },
+        }
         
 
         
@@ -41,9 +36,9 @@ function Announcement() {
     }, [announcements.length]);
 
     return (
-        <div className="bottom-3 right-4 lg:bottom-6 lg:right-14 fixed z-[100000000]">
+        <div className="bottom-3 right-4 2xl:bottom-6 lg:bottom-14 2xl:right-14 lg:right-6 fixed z-[100000000]">
             <button
-                className="mr-1.5 inline-block rounded bg-primary p-2 lg:px-6 lg:pb-2 lg:pt-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] py-4 bg-[#ff0054]"
+                className="mr-1.5 inline-block rounded bg-primary p-2 lg:px-4 lg:pb-2 lg:pt-2 2xl:px-6 2xl:pb-2 2xl:pt-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] py-4 bg-[#ff0054]"
                 type="button"
                 data-te-offcanvas-toggle
                 data-te-target="#offcanvasRight"
@@ -52,8 +47,8 @@ function Announcement() {
                 data-te-ripple-color="light"
             >
                 <div className='flex z-50 items-center justify-center'>
-                    <h1 className="text-xs lg:text-lg">📢</h1>
-                    <h1>Announcement</h1>
+                    <h1 className="text-xs 2xl:text-lg">📢</h1>
+                    <h1 className="text-xs 2xl:text-lg">Announcement</h1>
                 </div>
                 <div className="btn-badge z-40 absolute rounded-full bg-white text-black py-0 px-2 -right-1 -top-2 border-white">{numOfAnn}</div>
             </button>
@@ -106,7 +101,7 @@ function Announcement() {
                             <a href={announcement.link}>
                                 <img
                                     className="rounded-t-lg"
-                                    src={bg}
+                                    src={announcement.img}
                                     alt=""
                                 />
                             </a>

@@ -87,14 +87,14 @@ export default function Navbar() {
 
     return (
         <>
-            <div style={{ backgroundColor: `${color}`, transition: `background-color 0.3s ease`, position: `${type}` }} className={`z-[50] navbar text-white flex justify-between px-20 py-8 font-bannerfont font-semibold text-lg md:static md:w-full `}>
+            <div style={{ backgroundColor: `${color}`, transition: `background-color 0.3s ease`, position: `${type}` }} className={`z-[50] navbar text-white flex justify-between 2xl:px-20 2xl:py-8 lg:px-10 lg:py-4 font-bannerfont font-semibold text-lg md:static md:w-full `}>
                 <ul className={`tagline border-${border} border-${borderCol} bg-${bg}`}>
-                    <h2 className={`tag py-5 px-5 text-${textColor}`}><span className='text-2xl'>--</span> Commit To Be Fit.</h2>
+                    <h2 className={`tag 2xl:py-5 2xl:px-5 lg:px-2 lg:py-2 lg:text-base 2xl:text-xl text-${textColor}`}><span className='2xl:text-2xl lg:text-base'>--</span> Commit To Be Fit.</h2>
                     <GiHamburgerMenu onClick={handleNav} className={`icon lg:hidden text-2xl z-50`} />
 
                 </ul>
-                <ul className={`nav-items flex w-[36rem] bg-slate-900/60 text-white rounded-sm border border-1 border-${borderCol}`} >
-                    <li className='py-5 px-8 w-[9rem] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>
+                <ul className={`nav-items 2xl:text-xl lg:text-base flex 2xl:w-[36rem] lg:w-[35%]  bg-slate-900/60 text-white rounded-sm border border-1 border-${borderCol}`} >
+                    <li className='2xl:py-5 2xl:px-8 2xl:w-[9rem] lg:px-2 lg:py-2 lg:w-[25%] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>
                         <Link
                             activeClass="active"
                             to="home"
@@ -108,7 +108,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li
-                        className='relative group py-5 px-8 w-[9rem] hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'
+                        className='relative group 2xl:py-5 2xl:px-8 2xl:w-[9rem] lg:px-4 lg:py-2 lg:w-[25%] hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'
                         onMouseEnter={handleAboutUsHover}
                         onMouseLeave={handleAboutUsLeave}
                     >
@@ -154,7 +154,7 @@ export default function Navbar() {
 
                         )}
                     </li>
-                    <li className='py-5 px-8 w-[9rem] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>
+                    <li className='2xl:py-5 2xl:px-8 2xl:w-[9rem] lg:px-2 lg:py-2 lg:w-[25%] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>
                         <Link
                             activeClass="active"
                             to="gallery"
@@ -166,7 +166,7 @@ export default function Navbar() {
                             Gallery
                         </Link></li>
                     <li onMouseEnter={handleActivitiesHover}
-                        onMouseLeave={handleActivitiesLeave} className='relative py-5 px-8 w-[9rem] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>Activities
+                        onMouseLeave={handleActivitiesLeave} className='relative 2xl:py-5 2xl:px-8 2xl:w-[9rem] lg:px-2 lg:py-2 lg:w-[25%] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>Activities
                         {showActivitesDropdown && (
                             <div className='absolute font-thin text-orange-600 mt-5 bg-black p-2 shadow-md left-0 w-[9rem]'>
 
@@ -238,16 +238,15 @@ export default function Navbar() {
                     </Link></li>
                     <li><Link onClick={handleNav}
                         activeClass="active"
-                        to="gallery"
+                        to="taskforce"
                         spy={true}
                         smooth={true}
-                        offset={-105} // Adjust the offset as needed
+                        offset={-70} // Adjust the offset as needed
                         duration={1500} // Adjust the duration of the scroll animation
                     >
-                        Gallery
+                        Taskforce
 
                     </Link></li>
-
                     <li><Link onClick={handleNav}
                         activeClass="active"
                         to="timeline"
@@ -261,15 +260,16 @@ export default function Navbar() {
                     </Link></li>
                     <li><Link onClick={handleNav}
                         activeClass="active"
-                        to="taskforce"
+                        to="gallery"
                         spy={true}
                         smooth={true}
-                        offset={-70} // Adjust the offset as needed
+                        offset={-105} // Adjust the offset as needed
                         duration={1500} // Adjust the duration of the scroll animation
                     >
-                        Taskforce
+                        Gallery
 
                     </Link></li>
+
 
                 </ul>
             </div>

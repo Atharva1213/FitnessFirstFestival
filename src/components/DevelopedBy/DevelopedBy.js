@@ -1,5 +1,9 @@
 // import React from 'react'
 import './DevelopedBy.css'
+import arya from '../../Images/arya.jpg'
+import amb from '../../Images/amb.jpg'
+import khu from '../../Images/khu.jpg'
+import avi from '../../Images/avi.jpg'
 
 function DevelopedBy() {
     return (
@@ -10,9 +14,9 @@ function DevelopedBy() {
             </div>
             <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="main123">
                 <div className='main456 md:flex md:gap-20'>
-                    <div className="profile-card123 bg-gradient-to-t from-orange-600 via-pink-600 to-pink-800">
+                    <div className="profile-card123 bg-gradient-to-t from-orange-600 via-pink-600 to-pink-800 ">
                         <div className="img123">
-                            <img className='img1234' src="https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg" />
+                            <img className='img1234' src={arya} />
                         </div>
                         <div className="caption123 text-white">
                             <h3 className="h3123">Arya Kaslikar</h3>
@@ -29,7 +33,7 @@ function DevelopedBy() {
                     </div>
                     <div className="profile-card123 bg-gradient-to-t from-orange-600 via-pink-600 to-pink-800">
                         <div className="img123">
-                            <img className='img1234' src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" />
+                            <img className='img1234 ' src={amb} />
                         </div>
                         <div className="caption123 text-white">
                             <h3 className="h3123">Ambarish Gadgil</h3>
@@ -48,8 +52,8 @@ function DevelopedBy() {
                 </div>
                 <div className='main456 md:flex md:gap-20'>
                     <div className="profile-card123 bg-gradient-to-t from-orange-600 via-pink-600 to-pink-800">
-                        <div className="img123">
-                            <img className='img1234' src="https://1.bp.blogspot.com/-AO5j2Y9lzME/YLjr3mxiqAI/AAAAAAAACPE/KAaYYTtQTrgBE3diTbxGoc4U4fCGx-C2gCNcBGAsYHQ/s16000/team-1-4.jpg" />
+                        <div className="img123 ">
+                            <img className='img1234' src={khu} />
                         </div>
                         <div className="caption123 text-white">
                             <h3 className="h3123">Khush Kothari</h3>
@@ -69,7 +73,7 @@ function DevelopedBy() {
                     </div>
                     <div className="profile-card123 bg-gradient-to-t from-orange-600 via-pink-600 to-pink-800">
                         <div className="img123">
-                            <img className='img1234' src="https://1.bp.blogspot.com/-AO5j2Y9lzME/YLjr3mxiqAI/AAAAAAAACPE/KAaYYTtQTrgBE3diTbxGoc4U4fCGx-C2gCNcBGAsYHQ/s16000/team-1-4.jpg" />
+                            <img className='img1234' src={avi} />
                         </div>
                         <div className="caption123 text-white">
                             <h3 className="h3123">Avikshit Kharkar</h3>

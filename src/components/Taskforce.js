@@ -7,11 +7,13 @@ import face1 from "../Images/face1.jpg";
 import face2 from "../Images/face2.jpg";
 import face3 from "../Images/face3.jpg";
 import taskFace from "../Images/taskFace.png";
-import taskFace2 from "../Images/taskFace2.png";
+import taskFace2 from "../Images/mca2.png";
 import ls from "../Images/leenasharma.png";
+import ls2 from "../Images/ls2.png";
 import mca from "../Images/mca.jpg";
 import taskFace3 from "../Images/taskFace3.png";
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
+
 
 const carousel1Images = [group1, group2, group3];
 const carousel2Data = [
@@ -194,7 +196,6 @@ function TaskForce() {
                 </div>
             </div>
 
-            
         </div>
     );
 }

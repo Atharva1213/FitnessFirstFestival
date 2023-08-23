@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FitnessFirstFestival/static/css/main.20e9be22.css",
-    "main.js": "/FitnessFirstFestival/static/js/main.512173e4.js",
+    "main.css": "/FitnessFirstFestival/static/css/main.531c57c8.css",
+    "main.js": "/FitnessFirstFestival/static/js/main.98d9f1d1.js",
     "static/js/200.690e64e7.chunk.js": "/FitnessFirstFestival/static/js/200.690e64e7.chunk.js",
     "static/js/539.22ddcfa2.chunk.js": "/FitnessFirstFestival/static/js/539.22ddcfa2.chunk.js",
     "static/js/787.c42f3475.chunk.js": "/FitnessFirstFestival/static/js/787.c42f3475.chunk.js",
@@ -24,6 +24,7 @@
     "static/media/tabletennis.jpg": "/FitnessFirstFestival/static/media/tabletennis.15cda149ab3cc0234d18.jpg",
     "static/media/Group2.jpg": "/FitnessFirstFestival/static/media/Group2.12617162e33fdab070ac.jpg",
     "static/media/cricket.jpg": "/FitnessFirstFestival/static/media/cricket.98394fb097f4c3af3141.jpg",
+    "static/media/amb.jpg": "/FitnessFirstFestival/static/media/amb.d462d6c6e30f70e95f0d.jpg",
     "static/media/handball.jpg": "/FitnessFirstFestival/static/media/handball.e107d55f184f3a540a13.jpg",
     "static/media/sportsclub.jpg": "/FitnessFirstFestival/static/media/sportsclub.e5f5e194c2752389bc3f.jpg",
     "static/media/Group3.jpg": "/FitnessFirstFestival/static/media/Group3.90789bc853aeea0bd0bb.jpg",
@@ -32,28 +33,33 @@
     "static/media/volleyball.jpg": "/FitnessFirstFestival/static/media/volleyball.dce589acb598f6d86543.jpg",
     "static/media/gallery4.jpg": "/FitnessFirstFestival/static/media/gallery4.d72214382f21ca1939e5.jpg",
     "static/media/badminton.jpg": "/FitnessFirstFestival/static/media/badminton.d7477b9bfb061b3829c4.jpg",
+    "static/media/avi.jpg": "/FitnessFirstFestival/static/media/avi.118490187e36fd4509be.jpg",
     "static/media/taskFace3.png": "/FitnessFirstFestival/static/media/taskFace3.f49b239d2d3b1927096a.png",
     "static/media/football.jpg": "/FitnessFirstFestival/static/media/football.dc7f7b1e12cc0c9fc77c.jpg",
     "static/media/yoga.jpg": "/FitnessFirstFestival/static/media/yoga.20e8c3809ea2dcb3d721.jpg",
     "static/media/face2.jpg": "/FitnessFirstFestival/static/media/face2.f96b1961e9633b58aa16.jpg",
     "static/media/kabaddi.jpg": "/FitnessFirstFestival/static/media/kabaddi.8ddd7f111dc6294dbb09.jpg",
     "static/media/taskFace2.png": "/FitnessFirstFestival/static/media/taskFace2.72a15d0cc7ef92c2b4c0.png",
+    "static/media/leenasharma.png": "/FitnessFirstFestival/static/media/leenasharma.9d10faab1e56f60dea21.png",
     "static/media/sat1.jpg": "/FitnessFirstFestival/static/media/sat1.dd94caa436d29ca711b7.jpg",
     "static/media/trekking.jpg": "/FitnessFirstFestival/static/media/trekking.df57a0377261d5f04fde.jpg",
     "static/media/zumba.jpg": "/FitnessFirstFestival/static/media/zumba.0247fe9cdaabb8b11cfe.jpg",
     "static/media/marathon.jpg": "/FitnessFirstFestival/static/media/marathon.2af44d52403584e7482d.jpg",
     "static/media/taskFace.png": "/FitnessFirstFestival/static/media/taskFace.4df3a37ff2bf13fdfba3.png",
     "static/media/khokho.jpg": "/FitnessFirstFestival/static/media/khokho.a2db34e22f71239209ca.jpg",
+    "static/media/mca.jpg": "/FitnessFirstFestival/static/media/mca.d2ddb1249ef268546497.jpg",
     "static/media/logo.png": "/FitnessFirstFestival/static/media/logo.69c641a3fd96963c5ae5.png",
+    "static/media/khu.jpg": "/FitnessFirstFestival/static/media/khu.21068dad096d19af9e96.jpg",
+    "static/media/arya.jpg": "/FitnessFirstFestival/static/media/arya.d6c8c72efcadb04b5fae.jpg",
     "index.html": "/FitnessFirstFestival/index.html",
-    "main.20e9be22.css.map": "/FitnessFirstFestival/static/css/main.20e9be22.css.map",
-    "main.512173e4.js.map": "/FitnessFirstFestival/static/js/main.512173e4.js.map",
+    "main.531c57c8.css.map": "/FitnessFirstFestival/static/css/main.531c57c8.css.map",
+    "main.98d9f1d1.js.map": "/FitnessFirstFestival/static/js/main.98d9f1d1.js.map",
     "200.690e64e7.chunk.js.map": "/FitnessFirstFestival/static/js/200.690e64e7.chunk.js.map",
     "539.22ddcfa2.chunk.js.map": "/FitnessFirstFestival/static/js/539.22ddcfa2.chunk.js.map",
     "787.c42f3475.chunk.js.map": "/FitnessFirstFestival/static/js/787.c42f3475.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e9be22.css",
-    "static/js/main.512173e4.js"
+    "static/css/main.531c57c8.css",
+    "static/js/main.98d9f1d1.js"
   ]
 }

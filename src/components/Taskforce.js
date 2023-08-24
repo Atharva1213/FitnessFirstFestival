@@ -7,35 +7,16 @@ import face1 from "../Images/face1.jpg";
 import face2 from "../Images/face2.jpg";
 import face3 from "../Images/face3.jpg";
 import taskFace from "../Images/taskFace.png";
-import taskFace2 from "../Images/mca2.png";
+import carPic1 from "../Images/carouselPic1.jpg"
+import carPic2 from "../Images/carouselPic2.jpg"
+import carPic3 from "../Images/mangla.jpg"
+import carPic4 from "../Images/gadkari.jpg"
 import ls from "../Images/leenasharma.png";
-import ls2 from "../Images/ls2.png";
+import director from "../Images/director.jpg";
 import mca from "../Images/mca.jpg";
-import taskFace3 from "../Images/taskFace3.png";
-import { TiSocialLinkedinCircular } from 'react-icons/ti';
 
 
-const carousel1Images = [group1, group2, group3];
-const carousel2Data = [
-    {
-        text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium quia aliquam libero. Voluptatem qui enim numquam obcaecati amet dolores placeat ex explicabo quod libero. Sapiente quaerat, ea rerum saepe officiis unde iusto itaque quas eum reiciendis, ullam nisi veniam.',
-        image: face2,
-        name: "Name 1",
-        position: "Position 1",
-    },
-    {
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium quia aliquam libero. Voluptatem qui enim numquam obcaecati amet dolores placeat ex explicabo quod libero. Sapiente quaerat, ea rerum saepe officiis unde iusto itaque quas eum reiciendis, ullam nisi veniam.",
-        image: face1,
-        name: "Name 2",
-        position: "Position 2",
-    },
-    {
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium quia aliquam libero. Voluptatem qui enim numquam obcaecati amet dolores placeat ex explicabo quod libero. Sapiente quaerat, ea rerum saepe officiis unde iusto itaque quas eum reiciendis, ullam nisi veniam.",
-        image: face3,
-        name: "Name 3",
-        position: "Position 3",
-    },
-];
+
 
 function TaskForce() {
     return (
@@ -49,15 +30,19 @@ function TaskForce() {
                     <Carousel slideInterval={2000}>
                         <div
                             className="h-[100%] w-[100%] bg-cover bg-center"
-                            style={{ backgroundImage: `url(${group1})` }}
+                            style={{ backgroundImage: `url(${carPic1})` }}
                         ></div>
                         <div
                             className="h-[100%] w-[100%] bg-cover bg-center"
-                            style={{ backgroundImage: `url(${group2})` }}
+                            style={{ backgroundImage: `url(${carPic2})` }}
                         ></div>
                         <div
                             className=" h-[100%] w-[100%] bg-cover bg-center"
-                            style={{ backgroundImage: `url(${group3})` }}
+                            style={{ backgroundImage: `url(${carPic3})` }}
+                        ></div>
+                        <div
+                            className=" h-[100%] w-[100%] bg-cover bg-center"
+                            style={{ backgroundImage: `url(${carPic4})` }}
                         ></div>
                     </Carousel>
                 </div>
@@ -67,28 +52,22 @@ function TaskForce() {
                         <div className="flex h-full items-center justify-center">
                             <div className=" text-white text-center w-[90%] md:w-[80%] 2xl:w-[70%]">
                                 <p className="text-xs md:text-xl lg:text-sm 2xl:text-lg font-bold">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                                    eaque adipisci, itaque molestias ad magnam possimus odio
-                                    voluptatibus alias animi quos debitis ex exercitationem officiis
-                                    pariatur eligendi quae! Officiis maiores sit aliquid!
+                                    “Embrace the rhythm of your heartbeat and the energy within. At the Fitness First Festival, we celebrate not only physical strength but the power of determination and the joy of a healthier life. Let's come together, break a sweat, and inspire each other to reach new heights of wellness.”
                                 </p>
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
                                     className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] 2xl:h-[120px] 2xl:w-[120px] lg:w-[100px] ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${ls})` }}
+                                    style={{ backgroundImage: `url(${director})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Leena Sharma,</span>Convener
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Govind Kulkarni,</span>Director
                                 </p>
                             </div>
                         </div>
                         <div className="flex h-full items-center justify-center">
                             <div className=" text-white text-center w-[90%] md:w-[80%] 2xl:w-[70%]">
                                 <p className="text-xs md:text-xl font-bold lg:text-sm 2xl:text-lg">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Doloribus officiis dolorum rerum facilis molestiae sapiente
-                                    tempore tenetur in quod dolores, aliquam soluta quibusdam, optio
-                                    nisi quasi velit? Iure, facilis ipsa!
+                                    “Embracing and nurturing our physical fitness isn't solely pivotal for cultivating a sound and thriving physique, but it fundamentally underpins the bedrock of vibrant, inventive, and cerebral engagements.”
                                 </p>
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
@@ -103,17 +82,15 @@ function TaskForce() {
                         <div className="flex h-full items-center justify-center">
                             <div className=" text-white text-center w-[70%] md:w-[80%] 2xl:w-[70%]">
                                 <p className="text-xs md:text-xl lg:text-sm font-bold 2xl:text-lg">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-                                    dolor nam voluptatem possimus facilis eligendi, quia amet,
-                                    inventore exercitationem corporis.
+                                    Don't wait until you've reached your goal to be proud of yourself. Be proud of every step you take toward reaching that goal.
                                 </p>
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
                                     className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px]  bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${face3})` }}
+                                    style={{ backgroundImage: `url(${ls})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Name,</span>Position
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Leena Sharma,</span>Convener
                                 </p>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bg from '../Images/timBg.jpg';
 import food from '../Images/food.jpg'
 import trekking from '../Images/trekking.jpg'
@@ -7,8 +7,18 @@ import Card from '../components/Card'
 import Navbar from './Navbar';
 import { Link } from 'react-scroll';
 
+
+
+
 export default function Banner() {
 
+    function truncate(str, max_chars) {
+        if (str.length <= max_chars) {
+            return str;
+        } else {
+            return str.substring(0, max_chars) + '...';
+        }
+    }
     return (
         <div>
             <div id="home" className='banner h-screen w-full bg-cover lg:bg-center relative' style={{ backgroundImage: `url(${bg})` }}>
@@ -21,7 +31,7 @@ export default function Banner() {
                         <h3 className='title-year text-2xl 2xl:text-3xl pl-1 font-bannerFont2 lg:font-semibold text-blue-600'>2023-24</h3>
                     </div>
 
-                    <button className='border border-1 px-6 py-2 lg:px-4 lg:py-1 2xl:px-6 2xl:py-2 text-xl lg:text-base 2xl:text-xl mt-10 lg:mt-5 2xl:mt-10 rounded-md hover:bg-[#ff0054] hover:border-[#ff0054] transition duration-300 font-bannerfont '><Link
+                    <button id='xploremore' className='border border-1 px-6 py-2 lg:px-4 lg:py-1 2xl:px-6 2xl:py-2 text-xl lg:text-base 2xl:text-xl mt-10 lg:mt-5 2xl:mt-10 rounded-md hover:bg-[#ff0054] hover:border-[#ff0054] transition duration-300 font-bannerfont '><Link
                             activeClass="active"
                             to="timeline"
                             spy={true}
@@ -40,11 +50,13 @@ export default function Banner() {
                     <h4 className='text-lg 2xl:text-lg lg:text-sm mt-4 font-bannerfont'> - Alex Trevor</h4>
                 </div>
 
-                <div className="cards hidden lg:flex lg:absolute bottom-20 left-[4%] card-view gap-5 mt-10">
-                    <Card status="Upcoming" cardImg={trekking} sportType='Trekking' cov="object-cover" pos="object-center" competition='Trek with Tree Plantation' date='26/08/2023' />
-                    <Card status="Upcoming" cardImg={marathon} sportType='Walking' cov="bg-cover" pos="bg-center" competition='Walkathon' date='09/09/2023' />
-                    <Card status="Upcoming" cardImg={food} sportType='Fair' cov="bg-cover" pos="bg-bottom" competition='Healthy Food Fair' date='23/09/2023' />
+                
+                <div id='bannercardsec' className="hidden lg:grid lg:grid-cols-3 lg:w-[47%]  lg:absolute lg:h-[40%] justify-between gap-2 bottom-[4%] left-[4%]">
+                    <Card func={truncate('Trek & Tree Plantation',17)} status="Upcoming" cardImg={trekking} sportType='Trekking' cov="object-cover" pos="object-center" date='26/08/2023' className="w-[30%]" />
+                    <Card func={truncate('Walkathon',17)} status="Upcoming" cardImg={marathon} sportType='Walking' cov="bg-cover" pos="bg-center" date='09/09/2023' className="w-[30%]"/>
+                    <Card func={truncate('Healthy Food Fair',17)} status="Upcoming" cardImg={food} sportType='Fair' cov="bg-cover" pos="bg-bottom"  date='23/09/2023' className="w-[30%]"/>
                 </div>
+                
             </div>
         </div>
     );

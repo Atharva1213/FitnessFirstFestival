@@ -5,26 +5,26 @@ import logo from '../Images/logo.png'
 
 function Footer() {
     return (
-        <div className="h-full md:h-[75vh] md:pt-16 lg:h-[60vh] xl:h-[50vh] 2xl:[40vh] w-full text-white bg-black flex flex-col  lg:flex-row justify-start lg:justify-around gap-10 p-4 items-start px-6 lg:px-0 2xl:pt-16 lg:pt-8 ">
+        <div id='footer' className="h-full md:h-[75vh] md:pt-16 lg:h-[60vh] xl:h-[50vh] 2xl:[40vh] w-full text-white bg-black flex flex-col  lg:flex-row justify-start lg:justify-around gap-10 p-4 items-start px-6 lg:px-0 2xl:pt-16 lg:pt-8 ">
             <div className="text-xl md:flex md:items-start md:gap-10 md:text-3xl md:w-full md:justify-center lg:justify-around lg:w-[100%] lg:h-full lg:text-2xl  2xl:text-4xl">
-                <div className="w-full h-fit  text-white flex flex-col gap-8  lg:gap-4 2xl:gap-8 md:items-center lg:items-start">
+                <div id="footerlogosec" className="w-full h-fit  text-white flex flex-col gap-8  lg:gap-4 2xl:gap-8 md:items-center lg:items-start">
                     <div className="heading tracking-widest w-full justify-center items-center flex flex-row md:flex-row md:gap-4 lg:flex-col lg:gap-0 gap-2">
-                        <img className="h-52 lg:h-[150px] 2xl:h-[220px]" src={logo} alt="" />
+                        <img id="footerlogo" className="h-52 lg:h-[150px] 2xl:h-[220px]" src={logo} alt="" />
                     </div>
-                    <div className="flex gap-3 text-2xl 2xl:text-2xl lg:text-lg items-center justify-center w-full">
+                    <div id="footericons"  className="flex gap-3 text-2xl 2xl:text-2xl lg:text-lg items-center justify-center w-full">
                         <FaFacebookF />
                         <FaInstagram />
                         <FaYoutube />
                     </div>
-                    <div className="w-full text-base 2xl:text-base lg:text-xs text-orange-500 text-center lg:p-2 2xl:p-4">
+                    <div id="footercopyright" className="w-full text-base 2xl:text-base lg:text-xs text-orange-500 text-center lg:p-2 2xl:p-4">
                         @2023 by PCCOE Powered and secured by GoDev
                     </div>
                 </div>
                 <div className="w-full h-fit flex flex-col gap-10 mt-4 md:mt-0 md:items-center lg:items-start">
-                    <h2 className="uppercase text-xl 2xl:text-xl lg:text-base font-bold tracking-widest text-pink-600 ">
+                    <h2 id="footeroprn" className="uppercase text-xl 2xl:text-xl lg:text-base font-bold tracking-widest text-pink-600 ">
                         Days Of Operation
                     </h2>
-                    <div className="text-[17px] 2xl:text-[17px] lg:text-[14px]   tracking-wide">
+                    <div id="footerweekly" className="text-[17px] 2xl:text-[17px] lg:text-[14px]   tracking-wide">
                         <p>Mon-Fri: Weekly Activities</p>
                         <p>Non-Working Sat: Surprise Activities</p>
                         <p>Sun: Closed</p>
@@ -33,7 +33,7 @@ function Footer() {
 
             </div>
             <div  className="text-xl md:flex md:items-center md:gap-10 md:text-3xl md:w-full md:justify-center lg:w-[100%] lg:h-full lg:justify-center lg:gap-[70px] lg:text-2xl 2xl:gap-56 2xl:text-4xl ">
-                <div className="w-full h-full 2xl:w-[32%] lg:w-[40%] gap-10 2xl:gap-10  lg:gap-4 flex flex-col md:items-center lg:items-start">
+                <div id="footercontact" className="w-full h-full 2xl:w-[32%] lg:w-[40%] gap-10 2xl:gap-10  lg:gap-4 flex flex-col md:items-center lg:items-start">
                     <h2 className="uppercase text-xl 2xl:text-xl lg:text-base font-bold tracking-widest text-pink-600">
                         contact us
                     </h2>
@@ -58,7 +58,7 @@ function Footer() {
                         <li className=" hover:text-gray-300">Activities</li>
                         <li className=" hover:text-gray-300">Contact</li>
                     </ul>
-                    <button className="py-3 2xl:py-3 lg:py-1 lg:mt-8 mt-4 px-8 2xl:px-8 lg:px-4 border border-1 border-pink-600 text-white text-2xl 2xl:text-2xl lg:text-lg font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button>
+                    <button id="footer_register_btn" className="py-3 2xl:py-3 lg:py-1 lg:mt-8 mt-4 px-8 2xl:px-8 lg:px-4 border border-1 border-pink-600 text-white text-2xl 2xl:text-2xl lg:text-lg font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button>
 
                 </div>
 

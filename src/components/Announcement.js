@@ -36,8 +36,8 @@ function Announcement() {
     }, [announcements.length]);
 
     return (
-        <div className="bottom-3 right-4 2xl:bottom-6 lg:bottom-14 2xl:right-14 lg:right-6 fixed z-[100000000]">
-            <button
+        <div id='announcement' className="bottom-3 right-4 2xl:bottom-6 lg:bottom-14 2xl:right-14 lg:right-6 fixed z-[100000000]">
+            <button id='annbtn'
                 className="mr-1.5 inline-block rounded bg-primary p-2 lg:px-4 lg:pb-2 lg:pt-2 2xl:px-6 2xl:pb-2 2xl:pt-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] py-4 bg-[#ff0054]"
                 type="button"
                 data-te-offcanvas-toggle
@@ -46,7 +46,7 @@ function Announcement() {
                 data-te-ripple-init
                 data-te-ripple-color="light"
             >
-                <div className='flex z-50 items-center justify-center'>
+                <div   className='flex z-50 items-center justify-center'>
                     <h1 className="text-xs 2xl:text-lg">📢</h1>
                     <h1 className="text-xs 2xl:text-lg">Announcement</h1>
                 </div>

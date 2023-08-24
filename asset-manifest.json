@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FitnessFirstFestival/static/css/main.d4dbb22a.css",
-    "main.js": "/FitnessFirstFestival/static/js/main.f17eee3e.js",
+    "main.css": "/FitnessFirstFestival/static/css/main.beb9dd0d.css",
+    "main.js": "/FitnessFirstFestival/static/js/main.674678bf.js",
     "static/js/200.690e64e7.chunk.js": "/FitnessFirstFestival/static/js/200.690e64e7.chunk.js",
     "static/js/539.22ddcfa2.chunk.js": "/FitnessFirstFestival/static/js/539.22ddcfa2.chunk.js",
     "static/js/787.c42f3475.chunk.js": "/FitnessFirstFestival/static/js/787.c42f3475.chunk.js",
@@ -53,14 +53,14 @@
     "static/media/khu.jpg": "/FitnessFirstFestival/static/media/khu.21068dad096d19af9e96.jpg",
     "static/media/arya.jpg": "/FitnessFirstFestival/static/media/arya.d6c8c72efcadb04b5fae.jpg",
     "index.html": "/FitnessFirstFestival/index.html",
-    "main.d4dbb22a.css.map": "/FitnessFirstFestival/static/css/main.d4dbb22a.css.map",
-    "main.f17eee3e.js.map": "/FitnessFirstFestival/static/js/main.f17eee3e.js.map",
+    "main.beb9dd0d.css.map": "/FitnessFirstFestival/static/css/main.beb9dd0d.css.map",
+    "main.674678bf.js.map": "/FitnessFirstFestival/static/js/main.674678bf.js.map",
     "200.690e64e7.chunk.js.map": "/FitnessFirstFestival/static/js/200.690e64e7.chunk.js.map",
     "539.22ddcfa2.chunk.js.map": "/FitnessFirstFestival/static/js/539.22ddcfa2.chunk.js.map",
     "787.c42f3475.chunk.js.map": "/FitnessFirstFestival/static/js/787.c42f3475.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4dbb22a.css",
-    "static/js/main.f17eee3e.js"
+    "static/css/main.beb9dd0d.css",
+    "static/js/main.674678bf.js"
   ]
 }

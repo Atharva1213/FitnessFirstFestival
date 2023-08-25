@@ -1,11 +1,11 @@
 import { Carousel } from "flowbite-react";
 
-import group1 from "../Images/Group1.jpg";
-import group2 from "../Images/Group2.jpg";
-import group3 from "../Images/Group3.jpg";
-import face1 from "../Images/face1.jpg";
-import face2 from "../Images/face2.jpg";
-import face3 from "../Images/face3.jpg";
+// import group1 from "../Images/Group1.jpg";
+// import group2 from "../Images/Group2.jpg";
+// import group3 from "../Images/Group3.jpg";
+// import face1 from "../Images/face1.jpg";
+// import face2 from "../Images/face2.jpg";
+// import face3 from "../Images/face3.jpg";
 import taskFace from "../Images/taskFace.png";
 import carPic1 from "../Images/carouselPic1.jpg"
 import carPic2 from "../Images/carouselPic2.jpg"
@@ -64,21 +64,7 @@ function TaskForce() {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex h-full items-center justify-center">
-                            <div className=" text-white text-center w-[90%] md:w-[80%] 2xl:w-[70%]">
-                                <p className="text-xs md:text-xl font-bold lg:text-sm 2xl:text-lg">
-                                    “Embracing and nurturing our physical fitness isn't solely pivotal for cultivating a sound and thriving physique, but it fundamentally underpins the bedrock of vibrant, inventive, and cerebral engagements.”
-                                </p>
-                                <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
-                                <div
-                                    className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${mca})` }}
-                                ></div>
-                                <p className="mt-4 text-sm md:text-x lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Anjana A,</span>Co Convener
-                                </p>
-                            </div>
-                        </div>
+
                         <div className="flex h-full items-center justify-center">
                             <div className=" text-white text-center w-[70%] md:w-[80%] 2xl:w-[70%]">
                                 <p className="text-xs md:text-xl lg:text-sm font-bold 2xl:text-lg">
@@ -91,6 +77,22 @@ function TaskForce() {
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
                                     <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Leena Sharma,</span>Convener
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex h-full items-center justify-center">
+                            <div className=" text-white text-center w-[90%] md:w-[80%] 2xl:w-[70%]">
+                                <p className="text-xs md:text-xl font-bold lg:text-sm 2xl:text-lg">
+                                    “Embracing and nurturing our physical fitness isn't solely pivotal for cultivating a sound and thriving physique, but it fundamentally underpins the bedrock of vibrant, inventive, and cerebral engagements.”
+                                </p>
+                                <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
+                                <div
+                                    className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
+                                    style={{ backgroundImage: `url(${mca})` }}
+                                ></div>
+                                <p className="mt-4 text-sm md:text-x lg:text-base 2xl:text-lg">
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Anjana A,</span>Co Convener
                                 </p>
                             </div>
                         </div>
@@ -107,7 +109,7 @@ function TaskForce() {
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
-                                <img className=" lg:h-52 2xl:h-72 absolute bottom-0" src={taskFace} alt="" />
+                                <img alt='img desc' className=" lg:h-52 2xl:h-72 absolute bottom-0" src={taskFace} />
                             </div>
                             <div className="flex flex-col items-center gap-4 justify-center md:p-2">
                                 <h1 className="text-2xl 2xl:text-3xl font-semibold">Dr. Leena Sharma</h1>
@@ -116,7 +118,7 @@ function TaskForce() {
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
                                 <div className="handles flex gap-4">
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
-                                        href="https://www.linkedin.com/in/leena-sharma-b316b434/"><i class="fab fa-linkedin"></i></a>
+                                        href="https://www.linkedin.com/in/leena-sharma-b316b434/"><i className="fab fa-linkedin"></i></a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl  a123"
                                         href="mailto:leena.sharma@pccoepune.org">
                                         <i className="fab fa-instagram"></i>
@@ -129,7 +131,7 @@ function TaskForce() {
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
-                                <img className="lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} alt="" />
+                                <img alt='img desc' className="lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} />
                             </div>
                             <div className="flex flex-col items-center gap-4 justify-center md:p-2">
                                 <h1 className="text-2xl  2xl:text-3xl font-semibold">Mrs. Anjana Arakerimath</h1>
@@ -138,7 +140,7 @@ function TaskForce() {
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
                                 <div className="handles flex gap-4">
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
-                                        href="https://www.linkedin.com/in/anjana-arakerimath-5789b9a/"><i class="fab fa-linkedin"></i></a>
+                                        href="https://www.linkedin.com/in/anjana-arakerimath-5789b9a/"><i className="fab fa-linkedin"></i></a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
                                         href="">
                                         <i className="fab fa-instagram"></i>
@@ -151,7 +153,7 @@ function TaskForce() {
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
-                                <img className="lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} alt="" />
+                                <img alt='img desc' className="lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} />
                             </div>
                             <div className="flex flex-col items-center gap-4 justify-center md:p-2">
                                 <h1 className="text-2xl 2xl:text-3xl font-semibold">Mr. Santosh Pacharne</h1>
@@ -160,7 +162,7 @@ function TaskForce() {
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
                                 <div className="handles flex gap-4">
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
-                                        href="https://www.linkedin.com/in/santosh-pacharane-9052a417/"><i class="fab fa-linkedin"></i></a>
+                                        href="https://www.linkedin.com/in/santosh-pacharane-9052a417/"><i className="fab fa-linkedin"></i></a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
                                         href="">
                                         <i className="fab fa-instagram"></i>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import bg from '../Images/timBg.jpg';
 import food from '../Images/food.jpg'
 import trekking from '../Images/trekking.jpg'
@@ -62,4 +62,3 @@ export default function Banner() {
     );
 }
 
-// [#efd92d] 

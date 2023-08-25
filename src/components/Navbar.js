@@ -211,7 +211,7 @@ export default function Navbar() {
             </div >
             <div id="navForMobile" className={nav ? `overflow-auto mobile-nav lg:hidden fixed top-0 left-0 right-0 bottom-0 h-[100vh] w-[100%] sm:w-[60%] flex flex-col justify-start gap-12 pt-20 items-center ease-in duration-300 bg-pink-700 z-[100000001] mobile-nav ` : `overflow-auto mobile-nav lg:hidden fixed top-0 left-[-100%] right-0 bottom-0 h-[100vh] w-[100%] flex flex-col justify-start gap-12 pt-20 items-center ease-in duration-300 bg-pink-700 z-[100000001] `}>
                 <AiOutlineClose size={30} onClick={handleNav} className='icon lg:hidden text-white font-bold absolute top-[4%] right-[10%] z-[10000000]' />
-                <img className='h-[25%]' src={logo} alt="" />
+                <img alt='img desc' className='h-[25%]' src={logo}  />
 
                 <ul className='text-white text-3xl sm:text-4xl flex flex-col gap-8 sm:gap-16 items-center justify-center font-bannerFont2'>
                     <li><Link onClick={handleNav}

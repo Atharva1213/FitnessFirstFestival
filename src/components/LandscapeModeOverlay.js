@@ -8,10 +8,7 @@ const LandscapeModeOverlay = ({ show }) => {
         return (
             <div className="overlay p-4">
 
-                The website is available on Moblie screens!
-                <br />
-                The Site is still underdevelopment for desktop and laptop screens.
-                Thank You For your Patience
+                The website is available on Portrait mode!
             </div>
         );
 };

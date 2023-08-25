@@ -9,7 +9,7 @@ function Footer() {
             <div className="text-xl md:flex md:items-start md:gap-10 md:text-3xl md:w-full md:justify-center lg:justify-around lg:w-[100%] lg:h-full lg:text-2xl  2xl:text-4xl">
                 <div id="footerlogosec" className="w-full h-fit  text-white flex flex-col gap-8  lg:gap-4 2xl:gap-8 md:items-center lg:items-start">
                     <div className="heading tracking-widest w-full justify-center items-center flex flex-row md:flex-row md:gap-4 lg:flex-col lg:gap-0 gap-2">
-                        <img id="footerlogo" className="h-52 lg:h-[150px] 2xl:h-[220px]" src={logo} alt="" />
+                        <img alt='img desc' id="footerlogo" className="h-52 lg:h-[150px] 2xl:h-[220px]" src={logo} />
                     </div>
                     <div id="footericons"  className="flex gap-3 text-2xl 2xl:text-2xl lg:text-lg items-center justify-center w-full">
                         <FaFacebookF />

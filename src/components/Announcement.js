@@ -1,39 +1,24 @@
-import React, { useEffect } from 'react';
-import trek from '../Images/trekking.jpg';
-import food from '../Images/food.jpg';
-import walk from '../Images/marathon.jpg';
+import React, { useEffect, useState } from 'react';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
+import axios from 'axios';
 
 function Announcement() {
     const [numOfAnn, setNumOfAnn] = React.useState(0)
-    const announcements = [
-        {
-            title: 'Trek & Plant',
-            description: 'Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature',
-            img:trek,
-            link: '#',
-        },
-        {
-            title: 'Walk-a-thon',
-            description: '"Walkathons" are community events promoting physical fitness and social awareness. Participants walk for charitable causes, raising funds and fostering a sense of community while supporting important initiatives',
-            img:food,
-            link: '#',
-        },
-        {
-            title: 'Cyclothon',
-            description: 'A "Healthy Food Fair" showcases nutritious and delicious culinary options, encouraging informed dietary choices. Attendees can explore diverse flavors and gain nutritional insights, promoting a healthier lifestyle.',
-            img:walk,
-            link: '#',
-        }
-        
+    const  [announcements,setannouncements]=useState([]);
+ 
+    
+     //Function of api called ;
+     const Get_API_Called=()=>{ 
+        axios.get("http://localhost:80/first/Announcements_return.php")
+        .then((res)=>{setannouncements(res.data);setNumOfAnn(res.data.length);})}
 
-        
-    ];
-    useEffect(() => {
+     //when page loaded then function get excute 
+     useEffect(() => {
+        // Fetch data from the API when the page loads
+        Get_API_Called();
         initTE({ Offcanvas, Ripple });
-        setNumOfAnn(announcements.length)
+      }, []);
 
-    }, [announcements.length]);
 
     return (
         <div id='announcement' className="bottom-3 right-4 2xl:bottom-6 lg:bottom-4 2xl:right-14 lg:right-6 fixed z-[100000000]">
@@ -98,24 +83,24 @@ function Announcement() {
                             key={index}
                             className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mb-8"
                         >
-                            <a href={announcement.link}>
+                            <a href={announcement.Link}>
                                 <img
                                     className="rounded-t-lg"
-                                    src={announcement.img}
+                                    src={`data:image/jpeg;base64,${announcement.data}`}
                                     alt=""
                                 />
                             </a>
                             <div className="p-5">
-                                <a href={announcement.link}>
+                                <a href={announcement.Link}>
                                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                        {announcement.title}
+                                        {announcement.Title}
                                     </h5>
                                 </a>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                    {announcement.description}
+                                    {announcement.Description}
                                 </p>
                                 <a
-                                    href={announcement.link}
+                                    href={announcement.Link}
                                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                 >
                                     Read more

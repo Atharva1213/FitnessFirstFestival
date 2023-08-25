@@ -1,77 +1,33 @@
 import React from 'react';
+import axios from 'axios';
+import { useState,useEffect } from 'react';
 
-const events = [
-    {
-        date: '8th July 2023',
-        title: 'Session on Work Life Balance !',
-        description: 'A "Work-Life Balance Session" imparts strategies for effectively managing work and personal life. It cultivates time management, boundary setting, and self-care skills to enhance overall well-being.',
-        isLive: false,
-        isDone: true
-    },
-    {
-        date: '22nd July 2023',
-        title: 'Problem Solving / Critical thinking',
-        description: '"Problem Solving/Critical Analysis" sessions cultivate skills for identifying, analyzing, and resolving complex issues. Participants learn logical thinking, creative solutions, and evidence-based decision-making, enhancing their problem-solving capabilities.',
-        isLive: false,
-        isDone: true
-
-    },
-    {
-        date: '12th August 2023',
-        title: 'Session on Healthy Life Living',
-        description: 'A "Healthy Life Living Session" promotes holistic well-being, covering nutrition, fitness, stress management, and mental health. It empowers individuals to make sustainable lifestyle choices for improved overall health.',
-        isLive: false,
-        isLive: true
-    },
-    {
-        date: '26th August 2023',
-        title: 'Trekking with Tree Plantation',
-        description: '"Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature.',
-        isLive: false
-    },
-    {
-        date: '9th September 2023',
-        title: 'Walkathons',
-        description: '"Walkathons" are community events promoting physical fitness and social awareness. Participants walk for charitable causes, raising funds and fostering a sense of community while supporting important initiatives.',
-        isLive: false
-    },
-    {
-        date: '23rd September 2023',
-        title: 'Healthy Food Fair',
-        description: 'A "Healthy Food Fair" showcases nutritious and delicious culinary options, encouraging informed dietary choices. Attendees can explore diverse flavors and gain nutritional insights, promoting a healthier lifestyle.',
-        isLive: false
-    },
-    {
-        date: '14th October 2023',
-        title: 'हास्य जत्रा',
-        description: '"हास्य जत्रा" is a comedy show that takes audiences on a laughter-filled journey. Comedians use humor to entertain, creating a delightful excursion into the world of humor and entertainment.',
-        isLive: false
-    },
-    {
-        date: '28th October 2023',
-        title: 'Meditation Activities',
-        description: '"Meditation activities" encompass mindfulness practices like guided meditation and deep breathing, fostering inner peace, mental clarity, and relaxation. These techniques enhance well-being and reduce stress.',
-        isLive: false
-    },
-    {
-        date: '23rd December 2023',
-        title: 'Traditional Games [Family Day]',
-        description: '"Traditional Games (Family Day)" celebrates generational bonding with timeless activities such as sack races and board games, fostering family togetherness through classic pastimes and shared laughter.',
-        isLive: false
-    },
-
-];
-
-const sortedEvents = events.slice().sort((a, b) => {
-    if (a.isLive && !b.isLive) return -1;
-    if (!a.isLive && b.isLive) return 1;
-    if (!a.isDone && b.isDone) return -1;
-    if (a.isDone && !b.isDone) return 1;
-    return 0;
-});
 
 
 function Timeline() {
+
+    const  [Timelines,setTimelines]=useState([]);
+    //Function of api called ;
+    const Get_API_Called=()=>{ 
+       axios.get("http://localhost:80/first/Timeline.php")
+       .then((res)=>{setTimelines(res.data);
+            
+   Timelines.slice().sort((a, b) => {
+    if (a.isLive==='1' && b.isLive==='0') return -1;
+    if (a.isLive==='0' && b.isLive==='1') return 1;
+    if (a.isDone==='0' && b.isDone==='1') return -1;
+    if (a.isDone==='1' && b.isDone==='0') return 1;
+    return 0;
+});})
+
+   }
+
+    //when page loaded then function get excute 
+    useEffect(() => {
+       // Fetch data from the API when the page loads
+       Get_API_Called();
+     }, []);
+
     return (
         <div id="timeline" className='h-full w-full flex flex-col  lg:flex-row font-bannerfont bg-gradient-to-bl from-pink-700 via-black to-black'>
             <div className='p-4 flex flex-col gap-8 lg:w-[55%]'>
@@ -83,15 +39,15 @@ function Timeline() {
                 </div>
                 <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300" className="cursor overflow-auto left w-full h-[80vh] lg:w-full p-4 lg:pl-16 md:pt-8 flex flex-col gap-[3.5rem] ">
                     <ol className="relative border-l-2 border-pink-600">
-                        {sortedEvents.map((event, index) => (
+                        {Timelines.map((event, index) => (
                             <li key={index} className="mb-10 ml-4">
                                 <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -left-1.5"></div>
                                 <div className="head flex items-center gap-4 ">
                                     <time className="text-lg md:text-3xl lg:text-xl 2xl:text-lg font-normal leading-none text-gray-300">{event.date}</time>
-                                    {event.isDone ? <h1 className='done-glow bg-black text-white  border-2 border-green-600 px-1 md:text-lg text-sm lg:text-sm'>DONE</h1> : (event.isLive ? <h1 className='live-glow bg-black text-white  border-2 border-red-600 px-1 text-sm md:text-lg lg:text-sm'>🔴 LIVE</h1> : <h1 className='text-white md:text-lg text-sm lg:text-sm'> -- Upcoming</h1>)}
+                                    {event.isDone==='1' ? <h1 className='done-glow bg-black text-white  border-2 border-green-600 px-1 md:text-lg text-sm lg:text-sm'>DONE</h1> : (event.isLive=='1' ? <h1 className='live-glow bg-black text-white  border-2 border-red-600 px-1 text-sm md:text-lg lg:text-sm'>🔴 LIVE</h1> : <h1 className='text-white md:text-lg text-sm lg:text-sm'> -- Upcoming</h1>)}
                                 </div>
-                                <h3 className="text-2xl md:text-4xl lg:text-2xl 2xl:text-2xl font-medium text-pink-600 ">{event.title}</h3>
-                                <p className="text-lg md:text-xl  lg:text-base 2xl:text-lg font-normal text-white ">{event.description}</p>
+                                <h3 className="text-2xl md:text-4xl lg:text-2xl 2xl:text-2xl font-medium text-pink-600 ">{event.Title}</h3>
+                                <p className="text-lg md:text-xl  lg:text-base 2xl:text-lg font-normal text-white ">{event.Description}</p>
 
                             </li>
                         ))}

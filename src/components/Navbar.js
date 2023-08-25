@@ -126,9 +126,9 @@ export default function Navbar() {
                         {showAboutUsDropdown && (
                             <div className='absolute font-thin text-orange-600 2xl:mt-5 lg:mt-3 bg-black p-2 shadow-md left-0 w-full'>
 
-                                <a href='/about/history' className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-sm'>About</a>
+                                <a href='/about/history' className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'>About</a>
 
-                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-sm'><Link
+                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
                                     activeClass="active"
                                     to="taskforce"
                                     spy={true}
@@ -140,7 +140,7 @@ export default function Navbar() {
 
                                 </Link></li>
 
-                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-sm'><Link
+                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
                                     activeClass="active"
                                     to="DevBy"
                                     spy={true}
@@ -170,7 +170,7 @@ export default function Navbar() {
                         {showActivitesDropdown && (
                             <div className='absolute font-thin text-orange-600 lg:mt-3 2xl:mt-5 bg-black p-2 shadow-md left-0 w-full'>
 
-                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-sm'><Link
+                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
                                     activeClass="active"
                                     to="timeline"
                                     spy={true}
@@ -181,7 +181,7 @@ export default function Navbar() {
                                     Timeline
                                 </Link></li>
 
-                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-sm'><Link
+                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
                                     activeClass="active"
                                     to="eventsPlanned"
                                     spy={true}
@@ -192,7 +192,7 @@ export default function Navbar() {
                                     Event Planned
                                 </Link></li>
 
-                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-sm'><Link
+                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
                                     activeClass="active"
                                     to="timeline"
                                     spy={true}

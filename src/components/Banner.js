@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import bg from '../Images/timBg.jpg';
-import food from '../Images/food.jpg'
-import trekking from '../Images/trekking.jpg'
-import marathon from '../Images/marathon.jpg'
 import Card from '../components/Card'
 import Navbar from './Navbar';
 import { Link } from 'react-scroll';
-
+import axios from 'axios';
 
 
 
 export default function Banner() {
+
+    //Create the object to store the data;
+    const [data,setData]=useState([]);
+
+    //Function of api called ;
+    const Get_API_Called=()=>{ 
+        axios.get("http://localhost:80/first/Card_return.php").then((res)=>{setData(res.data); })
+        axios.get("http://localhost:80/first/Card_delete.php");
+        axios.get("http://localhost:80/first/Timeline_update.php")
+    }
+     //when page loaded then function get excute 
+     useEffect(() => {
+        // Fetch data from the API when the page loads
+        Get_API_Called();
+      }, []);
 
     function truncate(str, max_chars) {
         if (str.length <= max_chars) {
@@ -18,7 +30,9 @@ export default function Banner() {
         } else {
             return str.substring(0, max_chars) + '...';
         }
-    }
+    }  
+ 
+
     return (
         <div>
             <div id="home" className='banner h-screen w-full bg-cover lg:bg-center relative' style={{ backgroundImage: `url(${bg})` }}>
@@ -52,9 +66,9 @@ export default function Banner() {
 
                 
                 <div id='bannercardsec' className="hidden lg:grid lg:grid-cols-3 lg:w-[47%]  lg:absolute lg:h-[40%] justify-between gap-2 bottom-[4%] left-[4%]">
-                    <Card func={truncate('Trek & Tree Plantation',17)} status="Upcoming" cardImg={trekking} sportType='Trekking' cov="object-cover" pos="object-center" date='26/08/2023' className="w-[30%]" />
-                    <Card func={truncate('Walkathon',17)} status="Upcoming" cardImg={marathon} sportType='Walking' cov="bg-cover" pos="bg-center" date='09/09/2023' className="w-[30%]"/>
-                    <Card func={truncate('Healthy Food Fair',17)} status="Upcoming" cardImg={food} sportType='Fair' cov="bg-cover" pos="bg-bottom"  date='23/09/2023' className="w-[30%]"/>
+                     {data.map(item => (
+                          <Card func={truncate(item.name)} status={item.status} cardImg={item.data} sportType={item.type} cov="bg-cover" pos="bg-center" date={item.date} className="w-[30%]"/>
+                    ))}
                 </div>
                 
             </div>

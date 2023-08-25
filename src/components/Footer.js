@@ -29,6 +29,7 @@ function Footer() {
                         <p>Non-Working Sat: Surprise Activities</p>
                         <p>Sun: Closed</p>
                     </div>
+                    <button id="footer_register_btn" className="py-3 2xl:py-3 lg:py-1 lg:mt-0 mt-4 px-8 2xl:px-8 lg:px-4 border border-1 border-pink-600 text-white text-2xl 2xl:text-2xl lg:text-lg font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button>
                 </div>
 
             </div>
@@ -58,7 +59,7 @@ function Footer() {
                         <li className=" hover:text-gray-300">Activities</li>
                         <li className=" hover:text-gray-300">Contact</li>
                     </ul>
-                    <button id="footer_register_btn" className="py-3 2xl:py-3 lg:py-1 lg:mt-8 mt-4 px-8 2xl:px-8 lg:px-4 border border-1 border-pink-600 text-white text-2xl 2xl:text-2xl lg:text-lg font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button>
+                   
 
                 </div>
 
